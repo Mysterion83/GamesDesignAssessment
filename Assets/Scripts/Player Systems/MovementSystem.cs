@@ -8,6 +8,8 @@ public class MovementSystem : MonoBehaviour
     Rigidbody rb;
 
     [SerializeField]
+    bool CanMove = true;
+    [SerializeField]
     float MovementSpeed;
     [SerializeField]
     float JumpForce;
@@ -26,12 +28,15 @@ public class MovementSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 rawInput = GetRawInput();
-        GetJumpInput();
+        if (CanMove)
+        {
+            Vector3 rawInput = GetRawInput();
+            GetJumpInput();
+            rawInput = rawInput.normalized;
+            rawInput *= MovementSpeed * Time.deltaTime;
+            rb.velocity = new Vector3(rawInput.x, rb.velocity.y, rawInput.z);
+        }
         
-        
-        rawInput *= MovementSpeed * Time.deltaTime;
-        rb.velocity = new Vector3(rawInput.x, rb.velocity.y, rawInput.z);
     }
     Vector3 GetRawInput()
     {
