@@ -5,7 +5,7 @@ using UnityEngine;
 public class InteractionSystem : MonoBehaviour
 {
     [SerializeField]
-    float MaxinteractionDistance = 5f;
+    float MaxInteractionDistance = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class InteractionSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E)) 
         {
             Ray InteractionRay = new Ray(transform.position, transform.forward);
-            if (Physics.Raycast(InteractionRay,out RaycastHit hit,MaxinteractionDistance))
+            if (Physics.Raycast(InteractionRay,out RaycastHit hit, MaxInteractionDistance))
             {
                 if (hit.collider.gameObject.tag == "Interactable")
                 {
