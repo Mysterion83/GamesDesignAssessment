@@ -23,6 +23,8 @@ public class ItemPool
             case -4: return DebugItem3;
             case -5: return DebugItem4;
             case 1: return new Item(1, "Scientist Keycard", "A keycard given to low ranking scientists. Can open basic doors.", 1, new List<string>() { "UnlockLevel1Door" });
+            case 2: return new Item(2, "Major Scientist Keycard", "A keycard given to high ranking scientists. Can open advanced doors.", 1, new List<string>() { "UnlockLevel1Door", "UnlockLevel2Door" });
+            case 3: return new Item(3, "Facility Manager Keycard", "A keycard given to the facility manager. Can open any door.", 1, new List<string>() { "UnlockLevel1Door", "UnlockLevel2Door", "UnlockLevel3Door", });
             default: return NullItem;
 
         }
