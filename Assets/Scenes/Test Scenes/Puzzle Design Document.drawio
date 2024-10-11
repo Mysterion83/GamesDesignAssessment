@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="-mvy__dfejTajA5StZXl">
+    <mxGraphModel dx="1641" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-1" value="player gets the Scientist Keycard" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-2" value="Get Senior Scientist Keycard" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-3" value="Get Facility Manager Keycard" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-4" value="Open Gate" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-5" value="Guarded in a room by SCP-173, Must keep line of sight or trap it" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Vtw6d_-hnPHMJVIv8IQ0-6" target="Vtw6d_-hnPHMJVIv8IQ0-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-6" value="Before entering, SCP Document is outside the room explaining how SCP-173 Works" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Vtw6d_-hnPHMJVIv8IQ0-7" target="Vtw6d_-hnPHMJVIv8IQ0-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-7" value="Player enters a airlock which prevents SCP-173 from leaving the room" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Vtw6d_-hnPHMJVIv8IQ0-8" target="Vtw6d_-hnPHMJVIv8IQ0-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Vtw6d_-hnPHMJVIv8IQ0-8" target="Vtw6d_-hnPHMJVIv8IQ0-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Vtw6d_-hnPHMJVIv8IQ0-8" target="Vtw6d_-hnPHMJVIv8IQ0-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-8" value="Player must navigate the room filled with shelves and boxes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-9" value="If SCP-173 gets to close, it&#39;ll snap the players neck" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Vtw6d_-hnPHMJVIv8IQ0-15" target="Vtw6d_-hnPHMJVIv8IQ0-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-15" value="SCP-173 gets trapped in a smaller room" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-18" value="Unlock Light Container Zone Checkpoint" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
