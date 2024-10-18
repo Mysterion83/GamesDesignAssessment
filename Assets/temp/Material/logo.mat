@@ -25,6 +25,7 @@ Material:
     RenderType: Transparent
   disabledShaderPasses:
   - DepthOnly
+  - SHADOWCASTER
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -54,9 +55,9 @@ Material:
         m_Scale: {x: 1.1, y: 1.1}
         m_Offset: {x: -0.07, y: -0.07}
     - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: 76bd924553c62a547b9d34f89c65c886, type: 3}
+        m_Scale: {x: 1.1, y: 1.1}
+        m_Offset: {x: -0.07, y: -0.07}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}

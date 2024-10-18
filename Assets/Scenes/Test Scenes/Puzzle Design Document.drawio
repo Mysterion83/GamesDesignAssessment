@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="-mvy__dfejTajA5StZXl">
-    <mxGraphModel dx="1395" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="500" math="0" shadow="0">
+    <mxGraphModel dx="1415" dy="1259" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="500" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,43 +8,19 @@
           <mxGeometry x="1260" y="190" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-3" value="Get Facility Manager Keycard" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1650" y="170" width="120" height="60" as="geometry" />
+          <mxGeometry x="1930" y="190" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-4" value="Open Gate" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2240" y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-18" value="Unlock Light Container Zone Checkpoint" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="360" y="280" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="J7UxGqO8sJiu6iclm2Wi-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="J7UxGqO8sJiu6iclm2Wi-1" target="J7UxGqO8sJiu6iclm2Wi-2" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="J7UxGqO8sJiu6iclm2Wi-1" value="Player goes to the LCZ checkpoint" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="380" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="J7UxGqO8sJiu6iclm2Wi-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="J7UxGqO8sJiu6iclm2Wi-2" target="J7UxGqO8sJiu6iclm2Wi-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="J7UxGqO8sJiu6iclm2Wi-2" value="Player looks around to find a post-it note with keypad code to unlock door" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="280" y="380" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="J7UxGqO8sJiu6iclm2Wi-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="J7UxGqO8sJiu6iclm2Wi-3" target="J7UxGqO8sJiu6iclm2Wi-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="J7UxGqO8sJiu6iclm2Wi-3" value="Player enters code in keypad" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="440" y="380" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="J7UxGqO8sJiu6iclm2Wi-4" value="Doors become unlocked to Scientist Keycard" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="600" y="380" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="J7UxGqO8sJiu6iclm2Wi-5" value="Player Enters Heavy Containment Zone" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1000" y="200" width="120" height="60" as="geometry" />
+          <mxGeometry x="880" y="190" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J7UxGqO8sJiu6iclm2Wi-9" value="Search Computer Emails for the code for the keypad to unlock the gate" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2240" y="120" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="VsQfZUfygQZgR9HvosnZ-1" value="Room 1" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1000" y="520" width="780" height="400" as="geometry" />
+        <mxCell id="VsQfZUfygQZgR9HvosnZ-1" value="Room 1 (to remake&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="30" width="780" height="400" as="geometry" />
         </mxCell>
         <mxCell id="Vtw6d_-hnPHMJVIv8IQ0-1" value="player gets the Scientist Keycard" style="rounded=0;whiteSpace=wrap;html=1;" parent="VsQfZUfygQZgR9HvosnZ-1" vertex="1">
           <mxGeometry x="650" y="160" width="120" height="60" as="geometry" />
