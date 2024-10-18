@@ -1016,7 +1016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanMove: 1
   Sensitivity: 1500
-  ParentRotation: {fileID: 0}
+  ParentRotation: {fileID: 5508936824941023453}
 --- !u!114 &5978624461520723001
 MonoBehaviour:
   m_ObjectHideFlags: 0

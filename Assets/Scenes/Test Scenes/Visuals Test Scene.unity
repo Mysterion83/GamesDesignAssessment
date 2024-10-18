@@ -320,10 +320,6 @@ PrefabInstance:
       propertyPath: Sensitivity
       value: 750
       objectReference: {fileID: 0}
-    - target: {fileID: 3764361718115647193, guid: 8083930637c1ff34595d2ded11b84040, type: 3}
-      propertyPath: ParentRotation
-      value: 
-      objectReference: {fileID: 165668450}
     - target: {fileID: 5064948994483149038, guid: 8083930637c1ff34595d2ded11b84040, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -432,11 +428,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0803f1fe6515e0145a2e17b435e806f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &165668450 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5508936824941023453, guid: 8083930637c1ff34595d2ded11b84040, type: 3}
-  m_PrefabInstance: {fileID: 165668448}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &179437389
 PrefabInstance:
   m_ObjectHideFlags: 0
