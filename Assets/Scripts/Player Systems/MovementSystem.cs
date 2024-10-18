@@ -26,14 +26,14 @@ public class MovementSystem : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (CanMove)
         {
             Vector3 rawInput = GetRawInput();
             GetJumpInput();
             rawInput = rawInput.normalized;
-            rawInput *= MovementSpeed * Time.deltaTime;
+            rawInput *= MovementSpeed;// * Time.deltaTime;
             rb.velocity = new Vector3(rawInput.x, rb.velocity.y, rawInput.z);
         }
         
@@ -70,6 +70,6 @@ public class MovementSystem : MonoBehaviour
     }
     bool IsGrounded()
     {
-        return Physics.Raycast(transform.position, -Vector3.up, 1f);
+        return Physics.Raycast(transform.position, -Vector3.up, 1.6f);
     }
 }

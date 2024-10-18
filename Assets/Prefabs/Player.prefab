@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanMove: 1
-  MovementSpeed: 1000
+  MovementSpeed: 10
   JumpForce: 5
   JumpCooldown: 0.5
   CurrentJumpCooldown: 0
