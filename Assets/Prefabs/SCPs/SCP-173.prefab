@@ -69,6 +69,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SeenByCamera: 0
+  DetectionRange: 20
+  ViewLeniency: 0.65
 --- !u!1 &3058661868090420580
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,6 +83,7 @@ GameObject:
   - component: {fileID: 3826413968800745521}
   - component: {fileID: 9189489353146623596}
   - component: {fileID: 1535204765086257537}
+  - component: {fileID: 4553497156402176452}
   m_Layer: 0
   m_Name: SCP-173
   m_TagString: Untagged
@@ -177,3 +180,17 @@ CapsuleCollider:
   m_Height: 22.1548
   m_Direction: 1
   m_Center: {x: -0.1058501, y: 10.761499, z: 0.2615}
+--- !u!114 &4553497156402176452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3058661868090420580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d7ef3d24d5b8b4695b4ec63a29a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  Speed: 0

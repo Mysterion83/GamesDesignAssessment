@@ -24,7 +24,7 @@ public class SCP173AI : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(Target.position.x, transform.position.y, Target.position.z), Speed * Time.deltaTime);
             transform.LookAt(Target.position);
-            //transform.rotation = Quaternion.Euler(0, transform.rotation.y, 0);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
         }
     }
 }

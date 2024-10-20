@@ -5,23 +5,22 @@ using UnityEngine;
 public class CameraObjectDetection : MonoBehaviour
 {
     Camera Camera;
-    MeshRenderer Renderer;
-    Plane[] CameraFrustum;
-    Bounds Bounds;
     [SerializeField]
     public bool SeenByCamera = false;
+    [SerializeField]
+    public float DetectionRange = 50f;
+    [SerializeField]
+    public float ViewLeniency = .65f;
     // Start is called before the first frame update
     void Start()
     {
         Camera = Camera.main;
-        Renderer = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        CameraFrustum = GeometryUtility.CalculateFrustumPlanes(Camera);
-        if (GeometryUtility.TestPlanesAABB(CameraFrustum, Bounds))
+        if (!(Vector3.Dot(Camera.transform.forward, (gameObject.transform.position - Camera.transform.position).normalized) < ViewLeniency) && Physics.Raycast(Camera.transform.position,(gameObject.transform.position - Camera.transform.position).normalized,out RaycastHit hitInfo, DetectionRange) && hitInfo.transform.name == this.name)
         {
             SeenByCamera = true;
             Debug.Log(SeenByCamera);

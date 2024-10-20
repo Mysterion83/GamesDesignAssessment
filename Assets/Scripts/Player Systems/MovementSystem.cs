@@ -62,6 +62,7 @@ public class MovementSystem : MonoBehaviour
     void GetJumpInput()
     {
         CurrentJumpCooldown -= Time.deltaTime;
+        if (CurrentJumpCooldown < -50) CurrentJumpCooldown = 0;
         if (Input.GetKey(KeyCode.Space) && IsGrounded() && CurrentJumpCooldown <= 0)
         {
             rb.AddForce(0, JumpForce, 0, ForceMode.Impulse);

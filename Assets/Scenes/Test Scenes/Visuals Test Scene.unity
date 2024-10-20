@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.02
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -1709,6 +1709,63 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: bfffa5219e46d094b9c559a9ad433f21, type: 2}
+--- !u!1001 &1714953022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -30.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -83
+      objectReference: {fileID: 0}
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 167990787712330293, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221069316749244279, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
+      propertyPath: m_Name
+      value: Interactable Door Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 78f5e0a8b8c21544e9e06a23ecc74380, type: 3}
 --- !u!1 &1963738783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,3 +2237,4 @@ SceneRoots:
   - {fileID: 2084905401}
   - {fileID: 2070432852}
   - {fileID: 110374557}
+  - {fileID: 1714953022}

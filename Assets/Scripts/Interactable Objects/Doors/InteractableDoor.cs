@@ -6,9 +6,13 @@ using UnityEngine;
 public class InteractableDoor : Interactable
 {
     [SerializeField]
-    bool IsLocked;
+    Animator Door = null;
     [SerializeField]
-    bool IsOpen;
+    string DoorOpenAnimName = "DoorOpen";
+    [SerializeField]
+    string DoorCloseAnimName = "DoorClose";
+    [SerializeField]
+    bool IsOpen = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,27 +26,17 @@ public class InteractableDoor : Interactable
     }
     public override void Interact()
     {
-        if (!IsLocked)
+        if (Door.GetCurrentAnimatorStateInfo(0).IsName(DoorOpenAnimName)) return;
+        if (Door.GetCurrentAnimatorStateInfo(0).IsName(DoorCloseAnimName)) return;
+        if (!IsOpen)
         {
-            if (!IsOpen) 
-            {
-                Open();
-            }
-            else 
-            {
-                Close();
-            }
+            Door.Play(DoorOpenAnimName, 0, 0);
+            IsOpen = true;
         }
-    }
-    void Open()
-    {
-        IsOpen = true;
-        gameObject.SetActive(false);
-        throw new NotImplementedException();
-    }
-    void Close()
-    {
-        IsOpen = false;
-        throw new NotImplementedException();
+        else 
+        {
+            Door.Play(DoorCloseAnimName, 0, 0);
+            IsOpen = false;
+        }
     }
 }
