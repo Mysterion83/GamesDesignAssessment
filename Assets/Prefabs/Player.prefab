@@ -1141,5 +1141,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 6471045447428809213}
-  SlotsAmount: 4
+  SlotsAmount: 5
   CurrentHeldItemIndex: 0

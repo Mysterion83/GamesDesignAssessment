@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SeenByCamera: 0
-  DetectionRange: 20
+  DetectionRange: 50
   ViewLeniency: 0.65
 --- !u!1 &3058661868090420580
 GameObject:
