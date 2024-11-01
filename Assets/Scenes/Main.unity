@@ -1399,10 +1399,6 @@ PrefabInstance:
       value: SCP-173
       objectReference: {fileID: 0}
     - target: {fileID: 4553497156402176452, guid: 2479786be1b5a7c44bdb23d0ccac96d8, type: 3}
-      propertyPath: Speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4553497156402176452, guid: 2479786be1b5a7c44bdb23d0ccac96d8, type: 3}
       propertyPath: Target
       value: 
       objectReference: {fileID: 1508563493}
@@ -2964,7 +2960,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8695274620555395759, guid: 8083930637c1ff34595d2ded11b84040, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

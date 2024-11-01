@@ -193,4 +193,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  Speed: 0
+  Speed: 10
+  KillRange: 1
