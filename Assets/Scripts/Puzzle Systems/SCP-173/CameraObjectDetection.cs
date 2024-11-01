@@ -23,12 +23,12 @@ public class CameraObjectDetection : MonoBehaviour
         if (!(Vector3.Dot(Camera.transform.forward, (gameObject.transform.position - Camera.transform.position).normalized) < ViewLeniency) && Physics.Raycast(Camera.transform.position,(gameObject.transform.position - Camera.transform.position).normalized,out RaycastHit hitInfo, DetectionRange) && hitInfo.transform.name == this.name)
         {
             SeenByCamera = true;
-            Debug.Log(SeenByCamera);
+            //Debug.Log(SeenByCamera);
         }
         else
         {
             SeenByCamera = false;
-            Debug.Log(SeenByCamera);
+            //Debug.Log(SeenByCamera);
         }
     }
 }
