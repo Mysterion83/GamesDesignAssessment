@@ -31,7 +31,7 @@ public class MovementSystem : MonoBehaviour
         if (CanMove)
         {
             Vector3 rawInput = GetRawInput();
-            GetJumpInput();
+            //GetJumpInput();
             rawInput = rawInput.normalized;
             rawInput *= MovementSpeed;// * Time.deltaTime;
             rb.velocity = new Vector3(rawInput.x, rb.velocity.y, rawInput.z);
