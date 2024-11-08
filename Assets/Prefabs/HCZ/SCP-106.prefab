@@ -1055,6 +1055,7 @@ GameObject:
   - component: {fileID: 7169321616901201176}
   - component: {fileID: 2283555112238655267}
   - component: {fileID: 6386275431346618386}
+  - component: {fileID: 6880534767631899479}
   m_Layer: 0
   m_Name: SCP-106
   m_TagString: Untagged
@@ -1172,6 +1173,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e9d167fa2fd35e14b83e8c2c9bb86bfd, type: 2}
+--- !u!114 &6880534767631899479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384036776069575634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00bf8fc73a0743499095faedc6b23b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleSolved: 0
+  circuitBreakerOn: 0
+  FuseInserted: 0
+  WiresConnected: 0
+  VoltageAdjusted: 0
+  VoltageValue: 0
+  CurrentVoltageValue: 0
+  VoltageLeeway: 0
 --- !u!1 &9064898118849083609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,22 +1756,6 @@ PrefabInstance:
     - target: {fileID: 346077077218980271, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486550515755310556, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486550515755310556, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486550515755310556, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486550515755310556, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3486550515755310556, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
