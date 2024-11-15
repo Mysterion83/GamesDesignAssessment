@@ -47,6 +47,7 @@ public class InteractableAnimationObject : Interactable
     }
     public override void Interact()
     {
+        if (Anim.GetCurrentAnimatorStateInfo(0).length)
         if (!IsOn)
         {
             Anim.SetBool(AnimBoolName, true);
