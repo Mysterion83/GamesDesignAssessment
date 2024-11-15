@@ -3,16 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableDoor : Interactable
+public class InteractableAnimationObject : Interactable
 {
     [SerializeField]
-    Animator Door = null;
+    Animator Anim = null;
     [SerializeField]
-    string DoorOpenAnimName = "DoorOpen";
+    bool IsOn = false;
     [SerializeField]
-    string DoorCloseAnimName = "DoorClose";
+    string AnimBoolName = "";
+
+    [Header("OLD")]
     [SerializeField]
-    bool IsOpen = false;
+    string OnAnimName = "DoorOpen";
+    [SerializeField]
+    string OffAnimName = "DoorClose";
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,19 +29,31 @@ public class InteractableDoor : Interactable
     {
         
     }
-    public override void Interact()
+    public void InteractOld()
     {
-        if (Door.GetCurrentAnimatorStateInfo(0).IsName(DoorOpenAnimName)) return;
-        if (Door.GetCurrentAnimatorStateInfo(0).IsName(DoorCloseAnimName)) return;
-        if (!IsOpen)
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName(OnAnimName)) return;
+        //Door.SetBool("IsClosed", false);
+        if (Anim.GetCurrentAnimatorStateInfo(0).IsName(OffAnimName)) return;
+        if (!IsOn)
         {
-            Door.Play(DoorOpenAnimName, 0, 0);
-            IsOpen = true;
+            Anim.Play(OnAnimName, 0, 0);
+            IsOn = true;
         }
         else 
         {
-            Door.Play(DoorCloseAnimName, 0, 0);
-            IsOpen = false;
+            Anim.Play(OffAnimName, 0, 0);
+            IsOn = false;
+        }
+    }
+    public override void Interact()
+    {
+        if (!IsOn)
+        {
+            Anim.SetBool(AnimBoolName, true);
+        }
+        else
+        {
+            Anim.SetBool(AnimBoolName, false);
         }
     }
 }

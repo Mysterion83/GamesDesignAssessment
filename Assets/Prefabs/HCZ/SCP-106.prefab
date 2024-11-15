@@ -1769,16 +1769,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shield Metall rust 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4813057156619001611, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658231000263974101, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a69bdeb537f27464986afbd89cdf763f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4813057156619001611, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5624041365413217799}
   m_SourcePrefab: {fileID: 100100000, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
 --- !u!4 &2378348270689060206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 346077077218980271, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
   m_PrefabInstance: {fileID: 2723574286162654401}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &5731838671095769108 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7658231000263974101, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
+  m_PrefabInstance: {fileID: 2723574286162654401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7424040609543990218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4813057156619001611, guid: a55c6d00c97cff046a06dd276fcfeb21, type: 3}
+  m_PrefabInstance: {fileID: 2723574286162654401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5624041365413217799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7424040609543990218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Door: {fileID: 5731838671095769108}
+  DoorOpenAnimName: BreakerOpen
+  DoorCloseAnimName: BreakerClose
+  IsOpen: 0
 --- !u!1001 &2915686295622798383
 PrefabInstance:
   m_ObjectHideFlags: 0
