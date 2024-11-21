@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 3712128818524237833}
   - component: {fileID: 6218859928925072627}
   - component: {fileID: 1864546540822063358}
+  - component: {fileID: 4309320656448458772}
   m_Layer: 0
   m_Name: LCZ Hanging Lamp
   m_TagString: Untagged
@@ -202,3 +203,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4309320656448458772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910121938867435469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518c5271e9e851f40950d023f4dab04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Intensity: 0.8
+  FlickerSpeed: 1

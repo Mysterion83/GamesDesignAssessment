@@ -38,22 +38,16 @@ public class Puzzle2Manager : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    void TurnOnCircuitBreaker()
+    public void TurnOnCircuitBreaker()
     {
         circuitBreakerOn = true;
         if (IsPuzzleSolved()) PuzzleSolved = true;
     }
-    void TurnOffCircuitBreaker()
+    public void TurnOffCircuitBreaker()
     {
         circuitBreakerOn = false;
     }
-    void InsertFuse()
+    public void InsertFuse()
     {
         FuseInserted = true;
     }

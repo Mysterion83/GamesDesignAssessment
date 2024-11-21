@@ -867,10 +867,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 7658231000263974101}
-  DoorOpenAnimName: LeverSwitchingOn
-  DoorCloseAnimName: LeverSwitchingOff
-  IsOpen: 0
+  Anim: {fileID: 7658231000263974101}
+  IsOn: 0
+  AnimBoolName: IsLeverOn
 --- !u!1 &2199412944992761622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,6 +1545,7 @@ GameObject:
   - component: {fileID: 346077077218980271}
   - component: {fileID: 7658231000263974101}
   - component: {fileID: 4212881660311070771}
+  - component: {fileID: 7443017761519590237}
   m_Layer: 0
   m_Name: Shield Metall rust 4
   m_TagString: Untagged
@@ -1653,6 +1653,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &7443017761519590237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3645341313212875708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf6b0f6baaac9f4091764e6861db834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3754373621727758685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,10 +2261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 7658231000263974101}
-  DoorOpenAnimName: BreakerOpen
-  DoorCloseAnimName: BreakerClose
-  IsOpen: 0
+  Anim: {fileID: 7658231000263974101}
+  IsOn: 0
+  AnimBoolName: IsCoverOpen
 --- !u!64 &7765695385160697327
 MeshCollider:
   m_ObjectHideFlags: 0

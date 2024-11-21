@@ -16,15 +16,11 @@ public class InteractableItem : Interactable
         PlayerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public override void Interact()
     {
         PlayerInventory.AddItem(ItemToGive);
         Debug.Log("Interacted with object");
-        gameObject.SetActive(false);
+        Destroy(gameObject);
+        //gameObject.SetActive(false);
     }
 }

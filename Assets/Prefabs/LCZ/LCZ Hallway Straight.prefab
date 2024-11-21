@@ -32,8 +32,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8217258201010863174}
-  - {fileID: 3319058507786188887}
+  - {fileID: 4217342775623976665}
+  - {fileID: 7386246454880174792}
   - {fileID: 6339615828610295107}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -121,58 +121,58 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7573011559408757644}
     m_Modifications:
-    - target: {fileID: 2987032850060897123, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
-      propertyPath: m_Name
-      value: EZ Hanging Lamp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.72
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalPosition.z
       value: -5.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910121938867435469, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+      propertyPath: m_Name
+      value: LCZ Hanging Lamp (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
---- !u!4 &8217258201010863174 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+--- !u!4 &4217342775623976665 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
   m_PrefabInstance: {fileID: 649401901938390736}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6126330881532474049
@@ -183,58 +183,58 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7573011559408757644}
     m_Modifications:
-    - target: {fileID: 2987032850060897123, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
-      propertyPath: m_Name
-      value: EZ Hanging Lamp (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.72
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalPosition.z
       value: 5.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+    - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910121938867435469, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+      propertyPath: m_Name
+      value: LCZ Hanging Lamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
---- !u!4 &3319058507786188887 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+--- !u!4 &7386246454880174792 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8866096019107662486, guid: 928e68d0f4e5c29479303704791968ed, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
   m_PrefabInstance: {fileID: 6126330881532474049}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9101724502610672812

@@ -201,10 +201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 55962094833012362}
-  DoorOpenAnimName: DoorOpen
-  DoorCloseAnimName: DoorClose
-  IsOpen: 0
+  Anim: {fileID: 55962094833012362}
+  IsOn: 0
+  AnimBoolName: IsOpen
 --- !u!1001 &2087021627485256517
 PrefabInstance:
   m_ObjectHideFlags: 0
