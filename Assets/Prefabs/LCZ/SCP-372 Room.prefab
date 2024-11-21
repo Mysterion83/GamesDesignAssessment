@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 8832500725760852945}
   - component: {fileID: 1500857815833698076}
   - component: {fileID: 8588409361355268633}
+  - component: {fileID: 3836778624816890214}
   m_Layer: 0
   m_Name: SCP-372 Room
   m_TagString: Untagged
@@ -480,6 +481,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 19f843a183f84f24eb12915850fef5c0, type: 2}
+--- !u!114 &3836778624816890214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2431742608916370277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ce91d6bafc72c41bac86f9ba831beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2855860737135696878
 GameObject:
   m_ObjectHideFlags: 0

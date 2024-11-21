@@ -37,7 +37,7 @@ public class BlinkingSystem : MonoBehaviour
         {
             IsBlinking = false;
             CurrentBlinkTimer = BlinkingTimer;
-            BlinkPanel.transform.localPosition = Vector3.zero;
+            BlinkPanel.SetActive(false);
             BlinkBarGauge.transform.localScale = new Vector3(1, .8f, 1);
             Debug.Log("Stopped Blinking");
         }
@@ -45,7 +45,7 @@ public class BlinkingSystem : MonoBehaviour
         {
             CurrentBlinkTimer = 0;
             IsBlinking = true;
-            BlinkPanel.transform.localPosition = new Vector3 (0f, 0f, 0.3f);
+            BlinkPanel.SetActive(true);
             Debug.Log("Blinking");
         }
     }
@@ -57,8 +57,8 @@ public class BlinkingSystem : MonoBehaviour
     }
     void BlinkAreaEnter()
     {
-         InBlinkingArea = true;
-         EnableUIBar();
+        InBlinkingArea = true;
+        EnableUIBar();
     }
     void BlinkAreaLeave()
     {

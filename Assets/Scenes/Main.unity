@@ -2633,6 +2633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SCP-372 Room
       objectReference: {fileID: 0}
+    - target: {fileID: 3836778624816890214, guid: 9fafa0ad3539eb245bbb6991ac3b244b, type: 3}
+      propertyPath: Combination.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
