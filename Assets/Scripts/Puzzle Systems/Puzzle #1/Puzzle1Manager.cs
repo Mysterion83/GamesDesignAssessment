@@ -15,22 +15,24 @@ public class Puzzle1Manager : MonoBehaviour
     {
         GenerateCombination();
     }
-    bool isCorrectConbimation(int InCombination, int CombinationIndex)
+    public bool isCorrectConbimation(int InCombination, int CombinationIndex)
     {
         return Combination[CombinationIndex] == InCombination;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     void GenerateCombination()
     {
         for(int i = 0; i < Combination.Length; i++)
         {
-            Combination[i] = Random.Range(0,360);
+            Combination[i] = Random.Range(0,100);
             Debug.Log($"Combination {i}: {Combination[i]}");
         }
+    }
+    public int GetCombinationLength()
+    {
+        return Combination.Length;
+    }
+    public void SetSolved(bool IsSolved)
+    {
+        Solved = IsSolved;
     }
 }
