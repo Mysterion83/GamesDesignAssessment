@@ -7,6 +7,7 @@ public class SCP173AI : MonoBehaviour
 {
     CameraObjectDetection CameraObjectDetection;
     public Transform Target;
+    Rigidbody rb;
     [SerializeField]
     float Speed;
     [SerializeField]
@@ -19,10 +20,11 @@ public class SCP173AI : MonoBehaviour
         CameraObjectDetection = gameObject.GetComponentInChildren<CameraObjectDetection>();
         Target = GameObject.FindGameObjectWithTag("Player").transform;
         PlayerBlinking = GameObject.FindGameObjectWithTag("Player").GetComponent<BlinkingSystem>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (!CameraObjectDetection.SeenByCamera ^ PlayerBlinking.IsBlinking)
         {
@@ -39,8 +41,10 @@ public class SCP173AI : MonoBehaviour
     }
     void MoveTowardsPlayer()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(Target.position.x, transform.position.y, Target.position.z), Speed * Time.deltaTime);
+        
+        //transform.position = Vector3.MoveTowards(transform.position, new Vector3(Target.position.x, transform.position.y, Target.position.z), Speed);
         transform.LookAt(Target.position);
         transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        rb.AddForce(transform.forward * Speed);
     }
 }

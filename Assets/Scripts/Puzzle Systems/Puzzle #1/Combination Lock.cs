@@ -27,7 +27,7 @@ public class CombinationLock : MonoBehaviour
         if (PuzzleManager.isCorrectConbimation(CurrentInput, CodeIndex))
         {
             CodeIndex++;
-            if (CodeIndex == PuzzleManager.GetCombinationLength()) PuzzleManager.SetSolved(true);x
+            if (CodeIndex == PuzzleManager.GetCombinationLength()) PuzzleManager.SetSolved(true);
         }
         else
         {
