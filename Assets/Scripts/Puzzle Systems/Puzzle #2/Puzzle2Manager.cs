@@ -6,6 +6,10 @@ public class Puzzle2Manager : MonoBehaviour
 {
     [SerializeField]
     bool PuzzleSolved = false;
+    [SerializeField]
+    InteractableAnimationObject[] DoorsToOpen;
+    [SerializeField]
+    bool DoorsOpen;
 
     [Header("Circuit Breaker")]
     [SerializeField]
@@ -38,6 +42,10 @@ public class Puzzle2Manager : MonoBehaviour
     {
         
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F1)) OpenDoors();
+    }
     public void TurnOnCircuitBreaker()
     {
         circuitBreakerOn = true;
@@ -54,5 +62,14 @@ public class Puzzle2Manager : MonoBehaviour
     bool IsPuzzleSolved()
     {
         return circuitBreakerOn && FuseInserted && WiresConnected && VoltageAdjusted;
+    }
+    void OpenDoors()
+    {
+        if (DoorsOpen) return;
+        foreach (InteractableAnimationObject door in DoorsToOpen)
+        {
+            door.Interact();
+        }
+        DoorsOpen = true;
     }
 }
