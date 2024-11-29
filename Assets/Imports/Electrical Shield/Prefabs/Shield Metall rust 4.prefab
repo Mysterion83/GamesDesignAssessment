@@ -1665,6 +1665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf6b0f6baaac9f4091764e6861db834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PuzzleManager: {fileID: 0}
+  Lever: {fileID: 2397331419674645283}
 --- !u!1 &3754373621727758685
 GameObject:
   m_ObjectHideFlags: 0

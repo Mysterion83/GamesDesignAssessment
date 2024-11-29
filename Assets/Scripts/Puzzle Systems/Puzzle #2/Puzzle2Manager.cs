@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,10 @@ public class Puzzle2Manager : MonoBehaviour
     [Header("FuseBox")]
     [SerializeField]
     bool FuseInserted = false;
+    [SerializeField]
+    GameObject FuseObjectToSpawn;
+    [SerializeField]
+    List<Transform> PossibleFuseLocations;
     
 
     [Header("WireBox")]
@@ -40,7 +45,7 @@ public class Puzzle2Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GenerateFuse();
     }
     private void Update()
     {
@@ -49,7 +54,11 @@ public class Puzzle2Manager : MonoBehaviour
     public void TurnOnCircuitBreaker()
     {
         circuitBreakerOn = true;
-        if (IsPuzzleSolved()) PuzzleSolved = true;
+        if (IsPuzzleSolved())
+        {
+            PuzzleSolved = true;
+            OpenDoors();
+        }
     }
     public void TurnOffCircuitBreaker()
     {
@@ -71,5 +80,11 @@ public class Puzzle2Manager : MonoBehaviour
             door.Interact();
         }
         DoorsOpen = true;
+    }
+    void GenerateFuse()
+    {
+        int PossibleLocations = PossibleFuseLocations.Count-1;
+        Instantiate(FuseObjectToSpawn, PossibleFuseLocations[UnityEngine.Random.Range(0, PossibleLocations)].position,Quaternion.identity);
+        Debug.Log("Spawned Fuse");
     }
 }

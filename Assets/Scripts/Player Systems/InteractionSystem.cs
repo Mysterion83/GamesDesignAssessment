@@ -18,7 +18,7 @@ public class InteractionSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TooltipText.text = "";
+        TooltipText.text = null;
         Ray InteractionRay = new Ray(transform.position, transform.forward);
         if (!Physics.Raycast(InteractionRay, out RaycastHit hit, MaxInteractionDistance))
         {

@@ -12,33 +12,6 @@ public class InteractableAnimationObject : Interactable
     [SerializeField]
     string AnimBoolName = "";
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void InteractOld()
-    {
-        //if (Anim.GetCurrentAnimatorStateInfo(0).IsName(OnAnimName)) return;
-        ////Door.SetBool("IsClosed", false);
-        //if (Anim.GetCurrentAnimatorStateInfo(0).IsName(OffAnimName)) return;
-        //if (!IsOn)
-        //{
-        //    Anim.Play(OnAnimName, 0, 0);
-        //    IsOn = true;
-        //}
-        //else 
-        //{
-        //    Anim.Play(OffAnimName, 0, 0);
-        //    IsOn = false;
-        //}
-    }
     public override void Interact()
     {
         if (!IsOn)
@@ -51,5 +24,9 @@ public class InteractableAnimationObject : Interactable
             IsOn = false;
             Anim.SetBool(AnimBoolName, false);
         }
+    }
+    public bool GetIsOn()
+    {
+        return IsOn;
     }
 }
