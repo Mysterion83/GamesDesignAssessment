@@ -75,10 +75,10 @@ public struct InventorySlot
         return ItemInSlot.MaxAmount;
     }
 
-    public List<string> GetTags()
+    public List<ItemTags> GetTags()
     {
-        List<string> tags = new List<string>();
-        foreach (string tag in ItemInSlot.Tags)
+        List<ItemTags> tags = new List<ItemTags>();
+        foreach (ItemTags tag in ItemInSlot.Tags)
         {
             tags.Add(tag);
         }

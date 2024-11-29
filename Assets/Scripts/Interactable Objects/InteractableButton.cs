@@ -5,10 +5,13 @@ using UnityEngine;
 public class InteractableButton : Interactable
 {
     [SerializeField]
-    Interactable ObjectToInteractWith;
+    protected Interactable[] ObjectsToInteractWith;
 
     public override void Interact()
     {
-        ObjectToInteractWith.Interact();
+        foreach (Interactable objects in ObjectsToInteractWith)
+        {
+            objects.Interact();
+        }
     }
 }

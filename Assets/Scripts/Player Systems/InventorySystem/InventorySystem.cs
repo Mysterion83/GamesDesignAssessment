@@ -32,7 +32,7 @@ public class InventorySystem : MonoBehaviour
         if (Input.mouseScrollDelta.y > 0)
         {
             CurrentHeldItemIndex = (CurrentHeldItemIndex + 1) % SlotsAmount;
-            UI.CurrentSlotUpdate(CurrentHeldItemIndex);
+            UI.CurrentSlotUpdate(CurrentHeldItemIndex, Inventory[CurrentHeldItemIndex].GetName(), Inventory[CurrentHeldItemIndex].GetDescription());
         }
         else if (Input.mouseScrollDelta.y < 0)
         {
@@ -41,7 +41,7 @@ public class InventorySystem : MonoBehaviour
             {
                 CurrentHeldItemIndex = SlotsAmount - 1;
             }
-            UI.CurrentSlotUpdate(CurrentHeldItemIndex);
+            UI.CurrentSlotUpdate(CurrentHeldItemIndex, Inventory[CurrentHeldItemIndex].GetName(), Inventory[CurrentHeldItemIndex].GetDescription());
         }
     }
     public bool AreSlotsOccupied()
@@ -76,6 +76,10 @@ public class InventorySystem : MonoBehaviour
             }
         }
         return false;
+    }
+    public int GetCurrentHeldItemID()
+    {
+        return Inventory[CurrentHeldItemIndex].GetID();
     }
     public bool HasItem(int ID, int Amount)
     {

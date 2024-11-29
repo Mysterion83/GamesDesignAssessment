@@ -7,10 +7,12 @@ public class UIHotbar : MonoBehaviour
 {
     [SerializeField]
     Transform currentslot;
+    [SerializeField]
+    ItemNameFadeOut Tooltip;
     // Start is called before the first frame update
     void Start()
     {
-
+        Tooltip = gameObject.GetComponentInChildren<ItemNameFadeOut>();
     }
 
     // Update is called once per frame
@@ -22,8 +24,9 @@ public class UIHotbar : MonoBehaviour
     {
 
     }
-    public void CurrentSlotUpdate(int slot)
+    public void CurrentSlotUpdate(int slot, string Name, string Description)
     {
         currentslot.transform.localPosition = new Vector3((slot - 2) * 100,0,0);
+        Tooltip.UpdateTooltip(Name,Description);
     }
 }

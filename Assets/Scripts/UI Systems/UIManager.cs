@@ -19,8 +19,8 @@ public class UIManager : MonoBehaviour
     {
         Hotbar.HotbarUpdate(slots);
     }
-    public void CurrentSlotUpdate(int slot)
+    public void CurrentSlotUpdate(int slot, string InName, string InDescription)
     {
-        Hotbar.CurrentSlotUpdate(slot);
+        Hotbar.CurrentSlotUpdate(slot,InName,InDescription);
     }
 }

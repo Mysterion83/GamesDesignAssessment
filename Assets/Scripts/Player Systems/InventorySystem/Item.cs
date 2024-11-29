@@ -9,9 +9,9 @@ public struct Item
     public string Name;
     public string Description;
     public int MaxAmount;
-    public List<string> Tags;
+    public List<ItemTags> Tags;
 
-    public Item(int InID, string InName, string InDescription, int InMaxAmount, List<string>InTags)
+    public Item(int InID, string InName, string InDescription, int InMaxAmount, List<ItemTags> InTags)
     {
         ID = InID;
         Name = InName;

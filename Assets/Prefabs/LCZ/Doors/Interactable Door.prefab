@@ -264,7 +264,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8658290379986296809, guid: e792aa3d286ef3f43ba7523d968a2cb8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -289,7 +290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e912d6fabf4d564eaca67316b58b128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToInteractWith: {fileID: 4445294924708832208}
+  ObjectsToInteractWith:
+  - {fileID: 4445294924708832208}
 --- !u!4 &9147269524229476056 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7063674154039686557, guid: e792aa3d286ef3f43ba7523d968a2cb8, type: 3}
@@ -351,7 +353,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8658290379986296809, guid: e792aa3d286ef3f43ba7523d968a2cb8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -381,4 +384,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e912d6fabf4d564eaca67316b58b128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToInteractWith: {fileID: 4445294924708832208}
+  ObjectsToInteractWith:
+  - {fileID: 4445294924708832208}
