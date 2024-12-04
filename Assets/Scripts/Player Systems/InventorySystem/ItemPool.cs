@@ -25,6 +25,8 @@ public class ItemPool
             case 1: return new Item(1, "Scientist Keycard", "A keycard given to low ranking \nscientists. Can open basic doors.", 1, new List<ItemTags>() { ItemTags.UnlockLevel1Door });
             case 2: return new Item(2, "Major Scientist Keycard", "A keycard given to high ranking \nscientists. Can open advanced doors.", 1, new List<ItemTags>() { ItemTags.UnlockLevel1Door, ItemTags.UnlockLevel2Door });
             case 3: return new Item(3, "Facility Manager Keycard", "A keycard given to the facility \nmanager. Can open any door.", 1, new List<ItemTags>() { ItemTags.UnlockLevel1Door, ItemTags.UnlockLevel2Door, ItemTags.UnlockLevel3Door, });
+            case 4: return new Item(4,"SCP-005", "Skeleton Key \nUsed to open any key lock", 1, new List<ItemTags> { ItemTags.OpenKeyLocks });
+            case 5: return new Item(5,"Fuse", "A Fuse for a fusebox",1, new List<ItemTags> { ItemTags.Fuse });
             default: return NullItem;
 
         }

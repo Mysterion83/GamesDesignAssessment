@@ -49,7 +49,7 @@ public class Puzzle2Manager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F1)) OpenDoors();
+
     }
     public void TurnOnCircuitBreaker()
     {

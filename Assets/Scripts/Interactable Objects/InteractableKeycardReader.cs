@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class InteractableKeycardReader : InteractableButton
 {
-    InventorySystem inventory;
+    protected InventorySystem inventory;
     [SerializeField]
-    int RequiredItemID;
+    protected int RequiredItemID;
 
     private void Start()
     {

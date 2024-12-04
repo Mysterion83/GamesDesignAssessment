@@ -24,6 +24,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3908939460784510329, guid: 9a03f94cc54197143ae2215636d5b19b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1.134759
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908939460784510329, guid: 9a03f94cc54197143ae2215636d5b19b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6640302496860038595, guid: 9a03f94cc54197143ae2215636d5b19b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2

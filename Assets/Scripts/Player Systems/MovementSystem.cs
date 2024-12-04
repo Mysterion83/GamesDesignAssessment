@@ -11,12 +11,6 @@ public class MovementSystem : MonoBehaviour
     bool CanMove = true;
     [SerializeField]
     float MovementSpeed;
-    [SerializeField]
-    float JumpForce;
-    [SerializeField]
-    float JumpCooldown;
-    [SerializeField]
-    float CurrentJumpCooldown;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +25,6 @@ public class MovementSystem : MonoBehaviour
         if (CanMove)
         {
             Vector3 rawInput = GetRawInput();
-            //GetJumpInput();
             rawInput = rawInput.normalized;
             rawInput *= MovementSpeed;// * Time.deltaTime;
             rb.velocity = new Vector3(rawInput.x, rb.velocity.y, rawInput.z);
@@ -58,19 +51,5 @@ public class MovementSystem : MonoBehaviour
             rawInput += transform.right;
         }
         return rawInput;
-    }
-    void GetJumpInput()
-    {
-        CurrentJumpCooldown -= Time.deltaTime;
-        if (CurrentJumpCooldown < -50) CurrentJumpCooldown = 0;
-        if (Input.GetKey(KeyCode.Space) && IsGrounded() && CurrentJumpCooldown <= 0)
-        {
-            rb.AddForce(0, JumpForce, 0, ForceMode.Impulse);
-            CurrentJumpCooldown = JumpCooldown;
-        }
-    }
-    bool IsGrounded()
-    {
-        return Physics.Raycast(transform.position, -Vector3.up, 1.6f);
     }
 }

@@ -4,5 +4,7 @@ public enum ItemTags
     DebugItem,
     UnlockLevel1Door,
     UnlockLevel2Door,
-    UnlockLevel3Door
+    UnlockLevel3Door,
+    Fuse,
+    OpenKeyLocks
 }
