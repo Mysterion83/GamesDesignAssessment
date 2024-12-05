@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class Puzzle4Manager : MonoBehaviour
+public class Puzzle4Manager : Interactable
 {
     [SerializeField]
     public bool PuzzleComplete = false;
     [SerializeField]
     public int[,] LightsLayout; //x,y 
     [SerializeField]
-    public GameObject[] ScreenLights;
-    GameObject[,] ScreenLights2D;
+    public ServerScreen[] ScreenLights;
+    ServerScreen[,] ScreenLights2D;
     [SerializeField]
     public Server[] ServerRacks;
     Server[,] ServerRacks2D;
@@ -29,13 +29,13 @@ public class Puzzle4Manager : MonoBehaviour
     }
     void GetDefaultLayout()
     {
-        LightsLayout = new int[,] { { -1, -1, 0, 0 }, { -1, -1, -1, -1 }, { -1, -1, -1, -1 }, { -1, -1, -1, -1 } };
+        LightsLayout = new int[,] { { -1, -1, 0, 0 }, { -1, -1, -1, -1 }, { -1, -1, -1, -1 } };
         PutScreensAndServersTo2D();
-        UpdateServers();
+        UpdateServersAndScreens();
     }
     void PutScreensAndServersTo2D()
     {
-        ScreenLights2D = new GameObject[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
+        ScreenLights2D = new ServerScreen[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
         ServerRacks2D = new Server[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
         int index = 0;
         for (int i = 0; i < LightsLayout.GetLength(0); i++)
@@ -43,21 +43,13 @@ public class Puzzle4Manager : MonoBehaviour
             for (int j = 0; j < LightsLayout.GetLength(1); j++)
             {
                 if (i == 0 && j == 2) ;
-                else if (i == 0 && j == 3) ;
+                else if (i == 0 && j == 3);
                 else 
                 {
                     ScreenLights2D[i, j] = ScreenLights[index];
                     ServerRacks2D[i, j] = ServerRacks[index];
                     index++;
                 }
-                //if (i == 2 && j == 0);
-                //else if (j == 3 && i == 0);
-                //else
-                //{
-                //    ScreenLights2D[i, j] = ScreenLights[index];
-                //    ServerRacks2D[i, j] = ServerRacks[index];
-                //    index++;
-                //}
             }
         }
     }
@@ -73,20 +65,33 @@ public class Puzzle4Manager : MonoBehaviour
                 }
             }
         }
+        OpenDoors();
         PuzzleComplete = true;
+    }
+    void OpenDoors()
+    {
+        if (DoorsOpen) return;
+        foreach (InteractableAnimationObject door in DoorsToOpen)
+        {
+            door.Interact();
+        }
+        DoorsOpen = true;
     }
     public void UpdateCell(int X, int Y)
     {
         if (PuzzleComplete) return;
         LightsLayout[X, Y] *= -1;
+
         if (X > 0) LightsLayout[X-1, Y] *= -1;
         if (Y > 0) LightsLayout[X, Y-1] *= -1;
-        if (X < LightsLayout.GetLength(0)) LightsLayout[X + 1, Y] *= -1;
-        if (Y < LightsLayout.GetLength(1)) LightsLayout[X, Y + 1] *= -1;
-        UpdateServers();
+
+        if (X < LightsLayout.GetLength(0)-1) LightsLayout[X + 1, Y] *= -1;
+        if (Y < LightsLayout.GetLength(1)-1) LightsLayout[X, Y + 1] *= -1;
+
+        UpdateServersAndScreens();
         CheckIsComplete();
     }
-    void UpdateServers()
+    void UpdateServersAndScreens()
     {
         for (int i = 0; i < LightsLayout.GetLength(0); i++)
         {
@@ -95,12 +100,18 @@ public class Puzzle4Manager : MonoBehaviour
                 if (LightsLayout[i,j] == -1)
                 {
                     ServerRacks2D[i, j].TurnOff();
+                    //ScreenLights2D[i, j].TurnOff();
                 }
                 else if (LightsLayout[i, j] == 1)
                 {
                     ServerRacks2D[i, j].TurnOn();
+                    //ScreenLights2D[i, j].TurnOn();
                 }
             }
         }
+    }
+    public override void Interact()
+    {
+        GetDefaultLayout();
     }
 }

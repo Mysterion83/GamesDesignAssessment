@@ -22,7 +22,7 @@ public class Puzzle3Manager : MonoBehaviour
     void GenerateKeycard()
     {
         int PossibleLocations = PossibleKeycardSpawnLocations.Count - 1;
-        //Instantiate(KeycardToSpawn, PossibleKeycardSpawnLocations[UnityEngine.Random.Range(0, PossibleLocations)].position, Quaternion.identity);
+        Instantiate(KeycardToSpawn, PossibleKeycardSpawnLocations[UnityEngine.Random.Range(0, PossibleLocations)].position, Quaternion.identity);
         Debug.Log("Spawned Keycard");
     }
 }
