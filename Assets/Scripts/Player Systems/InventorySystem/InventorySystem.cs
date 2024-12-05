@@ -172,6 +172,6 @@ public class InventorySystem : MonoBehaviour
     }
     void UpdateUI()
     {
-
+        UI.InventoryUpdate(Inventory);
     }
 }

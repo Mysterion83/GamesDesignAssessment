@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 public struct InventorySlot
 {
@@ -74,7 +76,10 @@ public struct InventorySlot
     {
         return ItemInSlot.MaxAmount;
     }
-
+    public Sprite GetSprite()
+    {
+        return ItemInSlot.ItemImage;
+    }
     public List<ItemTags> GetTags()
     {
         List<ItemTags> tags = new List<ItemTags>();

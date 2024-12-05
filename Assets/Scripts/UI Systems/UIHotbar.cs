@@ -9,6 +9,8 @@ public class UIHotbar : MonoBehaviour
     Transform currentslot;
     [SerializeField]
     ItemNameFadeOut Tooltip;
+    [SerializeField]
+    Image[] HotbarImages;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,10 @@ public class UIHotbar : MonoBehaviour
     }
     public void HotbarUpdate(InventorySlot[] slots)
     {
-
+        for (int i = 0; i < slots.Length; i++) 
+        {
+            HotbarImages[0].sprite = slots[i].GetSprite();
+        }
     }
     public void CurrentSlotUpdate(int slot, string Name, string Description)
     {
