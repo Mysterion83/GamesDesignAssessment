@@ -26,7 +26,8 @@ public class UIHotbar : MonoBehaviour
     {
         for (int i = 0; i < slots.Length; i++) 
         {
-            HotbarImages[0].sprite = slots[i].GetSprite();
+            HotbarImages[i].sprite = slots[i].GetSprite();
+            HotbarImages[i].preserveAspect = true;
         }
     }
     public void CurrentSlotUpdate(int slot, string Name, string Description)

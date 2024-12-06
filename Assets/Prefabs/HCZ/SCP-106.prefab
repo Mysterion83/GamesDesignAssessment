@@ -7745,20 +7745,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2937707031884047043, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: Text
-      value: '[temp Text]
-
-        Put the fuse in the fusebox
-
-        Connect the
-        wires in in the wirebox
-
-        Adjust the voltage
-
-        Turn on the
-        breaker
-
-
-        Get Keycard from testing chamber'
+      value: "Dr. Porter\u2019s Testing Report 15:21:\r\nTesting with SCP-173 commenced
+        at 15:05 with 3 Class-D Personnel and 1 Scientist as part of the Class-D
+        Scientist cooperation test, <color=red><b>Two of the Class-D Personnel decided
+        to attempt to kill the Scientist and succeeded leaving a major scientist
+        keycard in the testing chamber,</color></b> we were going to order facility
+        guards to terminate the Class-D however a series of what seem to be shockwaves
+        disrupted the power to the general testing chamber and causing the power
+        to go out, cause SCP-173 to dispose of them.  Causes of shockwaves are unknown
+        and the P.A has not announced anything c0nt1\u2026\u2026.\n\r\n15:24 The
+        Facility is containing a containment breach, <color=red><b>Cause of general
+        testing chamber power outage seems to be due to a blown fuse, disconnection
+        of wires and disruption of voltage. Turned off the circuit breaker to prevent
+        further damage.</color></b>\r"
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalScale.x
@@ -7774,15 +7773,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.222513
+      value: -10.457
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.543972
+      value: 26.544
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4953117
+      value: 1.241
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7794,11 +7793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7806,11 +7805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9017087614883796818, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_Name
@@ -9670,15 +9669,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -87.03
+      value: -31.265
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -42.777
+      value: 33.96
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.027
+      value: -12.58
       objectReference: {fileID: 0}
     - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: m_LocalRotation.w

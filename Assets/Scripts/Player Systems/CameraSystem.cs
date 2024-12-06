@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraSystem : MonoBehaviour
 {
     [SerializeField]
-    bool CanMove = true;
+    public bool CanMove = true;
     [SerializeField]
     float Sensitivity = 100f;
 

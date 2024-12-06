@@ -32,7 +32,7 @@ public class Puzzle4Manager : Interactable
         PutScreensAndServersTo2D();
         UpdateServersAndScreens();
     }
-    void PutScreensAndServersTo2D()
+    void PutScreensAndServersTo2Dold()
     {
         ScreenLights2D = new ServerScreen[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
         ServerRacks2D = new Server[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
@@ -52,6 +52,34 @@ public class Puzzle4Manager : Interactable
             }
         }
     }
+    void PutScreensAndServersTo2D()
+    {
+        ScreenLights2D = new ServerScreen[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
+        ServerRacks2D = new Server[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
+        int index = 0;
+
+        for (int i = 0; i < LightsLayout.GetLength(0); i++)
+        {
+            for (int j = 0; j < LightsLayout.GetLength(1); j++)
+            {
+                if ((i == 0 && j == 2) || (i == 0 && j == 3))
+                    continue;
+
+                if (index < ScreenLights.Length && index < ServerRacks.Length)
+                {
+                    ScreenLights2D[i, j] = ScreenLights[index];
+                    ServerRacks2D[i, j] = ServerRacks[index];
+                    index++;
+                }
+                else
+                {
+                    Debug.LogError($"Index {index} out of bounds for ScreenLights or ServerRacks.");
+                    return;
+                }
+            }
+        }
+    }
+
     void CheckIsComplete()
     {
         for (int i = 0; i < LightsLayout.GetLength(0); i++)

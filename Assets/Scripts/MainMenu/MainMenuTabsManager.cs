@@ -17,6 +17,8 @@ public class MainMenuTabsManager : MonoBehaviour
     public GameObject Settings;
     [SerializeField]
     public GameObject Credits;
+    [SerializeField]
+    public GameObject Controls;
 
     [Header("Settings")]
     public string tmp;
@@ -38,6 +40,7 @@ public class MainMenuTabsManager : MonoBehaviour
                 MainMenu.SetActive(true);
                 Settings.SetActive(false);
                 Credits.SetActive(false);
+                Controls.SetActive(false);
                 break;
             case MainMenuTabs.PlayGame:
                 gm.PlayGame();
@@ -46,11 +49,19 @@ public class MainMenuTabsManager : MonoBehaviour
                 MainMenu.SetActive(false);
                 Settings.SetActive(true);
                 Credits.SetActive(false);
+                Controls.SetActive(false);
                 break;
             case MainMenuTabs.Credits:
                 MainMenu.SetActive(false);
                 Settings.SetActive(false);
                 Credits.SetActive(true);
+                Controls.SetActive(false);
+                break;
+            case MainMenuTabs.Controls:
+                MainMenu.SetActive(false);
+                Settings.SetActive(false);
+                Credits.SetActive(false);
+                Controls.SetActive(true);
                 break;
             case MainMenuTabs.Quit:
                 gm.QuitGame();

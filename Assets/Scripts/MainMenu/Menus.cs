@@ -8,5 +8,6 @@ public enum MainMenuTabs
     PlayGame = 2,
     Settings = 3,
     Credits = 4,
-    Quit = 5
+    Quit = 5,
+    Controls = 6
 }
