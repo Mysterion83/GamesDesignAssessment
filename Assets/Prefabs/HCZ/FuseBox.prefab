@@ -392,9 +392,10 @@ GameObject:
   - component: {fileID: 1756912209976857108}
   - component: {fileID: 2805126940601642914}
   - component: {fileID: 789662080744551682}
+  - component: {fileID: 8016418876812605385}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -485,6 +486,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8016418876812605385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728179002629730416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 2159330818985037339}
+  IsOn: 0
+  AnimBoolName: IsOpen
 --- !u!1 &6782855348377733295
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,9 +759,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2061391715324709723}
   - component: {fileID: 688638189313660756}
+  - component: {fileID: 2159330818985037339}
+  - component: {fileID: 5325911071662171489}
   m_Layer: 0
   m_Name: FuseBox
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -782,8 +800,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectsToInteractWith: []
-  RequiredItemID: 0
+  RequiredItemID: 5
+  Fuse: {fileID: 1202101845377646847}
   PuzzleManager: {fileID: 0}
+--- !u!95 &2159330818985037339
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940505604217464890}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f198672c93fd2e4396f9631648e321e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &5325911071662171489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940505604217464890}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3, y: 0.8, z: 0.8}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8272929016929208563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,6 +1121,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c9a8eb65521e604180e644e585f6fb1, type: 3}
+--- !u!1 &1202101845377646847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 757314348410484505, guid: 4c9a8eb65521e604180e644e585f6fb1, type: 3}
+  m_PrefabInstance: {fileID: 1885948457831872486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6395309652350504793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4822378971712272575, guid: 4c9a8eb65521e604180e644e585f6fb1, type: 3}

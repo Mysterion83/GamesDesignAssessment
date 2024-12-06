@@ -41,8 +41,7 @@ public class Puzzle4Manager : Interactable
         {
             for (int j = 0; j < LightsLayout.GetLength(1); j++)
             {
-                if (i == 0 && j == 2) ;
-                else if (i == 0 && j == 3);
+                if ((i == 0 && j == 2) ^ ((i == 0 && j == 3)));
                 else 
                 {
                     ScreenLights2D[i, j] = ScreenLights[index];

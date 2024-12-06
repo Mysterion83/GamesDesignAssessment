@@ -37,6 +37,7 @@ public class MovementSystem : MonoBehaviour
     public void UnfreezeRotation()
     {
         rb.freezeRotation = false;
+        rb.AddTorque(0, 5, 1);
     }
     Vector3 GetRawInput()
     {
