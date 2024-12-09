@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     float DeathTime;
     [SerializeField]
     float CurrentDeathTime;
+    [SerializeField]
+    bool GateUnlocked;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +37,19 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
+    public void UnlockGate()
+    {
+        GateUnlocked = true;
+    }
+    public bool GetGateUnlocked()
+    {
+        return GateUnlocked;
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene("Main");
-        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
     }
     public void GameStart()
     {
@@ -49,6 +59,7 @@ public class GameManager : MonoBehaviour
     }
     public void ReturnToMainMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("Menu");
     }
     public void QuitGame()

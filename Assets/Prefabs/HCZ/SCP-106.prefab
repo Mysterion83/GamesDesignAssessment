@@ -388,6 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41f8e3208e2a2d478a9939024c75341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
   ObjectsToInteractWith: []
   RequiredItemID: 5
   Fuse: {fileID: 0}
@@ -8796,6 +8797,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7735667792441153012, guid: bfdca0dc8b83c134fa3a30b221c49ddc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735667792441313748, guid: bfdca0dc8b83c134fa3a30b221c49ddc, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

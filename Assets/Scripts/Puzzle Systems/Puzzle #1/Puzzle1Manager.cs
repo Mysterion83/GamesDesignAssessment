@@ -13,7 +13,7 @@ public class Puzzle1Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GenerateCombination();
+        //GenerateCombination();
     }
     public bool isCorrectConbimation(int InCombination, int CombinationIndex)
     {

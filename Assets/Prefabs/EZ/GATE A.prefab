@@ -825,6 +825,10 @@ PrefabInstance:
       propertyPath: RequiredItemID
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 20621819094689944, guid: f6412f46416040147bb835a6ff0e2166, type: 3}
+      propertyPath: AdditionalToolTip
+      value: Requires Lifting The Lockdown
+      objectReference: {fileID: 0}
     - target: {fileID: 317159094070969259, guid: f6412f46416040147bb835a6ff0e2166, type: 3}
       propertyPath: m_Name
       value: Gate A Doors
@@ -936,6 +940,10 @@ PrefabInstance:
     - target: {fileID: 3305971863997213602, guid: f6412f46416040147bb835a6ff0e2166, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021275664309682646, guid: f6412f46416040147bb835a6ff0e2166, type: 3}
+      propertyPath: AdditionalToolTip
+      value: Requires Lifting The Lockdown
       objectReference: {fileID: 0}
     - target: {fileID: 6086272507613146739, guid: f6412f46416040147bb835a6ff0e2166, type: 3}
       propertyPath: m_LocalPosition.x

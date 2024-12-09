@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
   Anim: {fileID: 557653407936794888}
   IsOn: 0
   AnimBoolName: IsOpen
@@ -431,6 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf1d0a1ce27335445ab7ad48233f7377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: Requires a key
   ObjectsToInteractWith:
   - {fileID: 9017525013677710629}
   RequiredItemID: 4

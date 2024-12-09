@@ -498,6 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: Requires a key
   Anim: {fileID: 2159330818985037339}
   IsOn: 0
   AnimBoolName: IsOpen
@@ -799,6 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41f8e3208e2a2d478a9939024c75341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
   ObjectsToInteractWith: []
   RequiredItemID: 5
   Fuse: {fileID: 1202101845377646847}

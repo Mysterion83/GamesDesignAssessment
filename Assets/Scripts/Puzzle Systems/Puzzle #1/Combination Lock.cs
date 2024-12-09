@@ -5,33 +5,73 @@ using UnityEngine;
 public class CombinationLock : MonoBehaviour
 {
     [SerializeField]
-    Puzzle1Manager PuzzleManager;
+    InteractableAnimationObject Anim;
     [SerializeField]
     GameObject Dial;
 
     [SerializeField]
     int CurrentInput;
     [SerializeField]
+    float RawCurrentInput;
+    [SerializeField]
     int CodeIndex;
+
+    [Header("Combination Code")]
+    [SerializeField]
+    int[] Combination;
+    [SerializeField]
+    float TurnSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
         CodeIndex = 0;
+        GenerateCombination();
+    }
+    public void Update()
+    {
+        UpdateDial(CurrentInput);
     }
     void UpdateDial(int CurrentValue)
     {
-        Dial.transform.localRotation = Quaternion.Euler(new Vector3((float)CurrentValue*3.6f, 0, 0));
+        Dial.transform.localRotation = Quaternion.Euler(new Vector3(-(((float)CurrentValue * 3.6f)-90), -180, -90));
     }
-    void InputCode()
+    public void InputCode(float Change)
     {
-        if (PuzzleManager.isCorrectConbimation(CurrentInput, CodeIndex))
+        int OldCurrentInput = CurrentInput;
+        RawCurrentInput += Change * TurnSpeed;
+        if (RawCurrentInput < 0) RawCurrentInput = 99;
+        else if (RawCurrentInput >= 100) RawCurrentInput = 0;
+        Debug.Log($"RawInput: {RawCurrentInput}");
+        CurrentInput = ((int)RawCurrentInput);
+        
+
+        if (Combination[CodeIndex] == CurrentInput)
         {
             CodeIndex++;
-            if (CodeIndex == PuzzleManager.GetCombinationLength()) PuzzleManager.SetSolved(true);
+            Debug.Log($"Moved to next CodeIndex: {CodeIndex}");
+            if (CodeIndex >= Combination.Length)
+            {
+                OpenSafe();
+            }
         }
-        else
+        else if (CurrentInput != OldCurrentInput) PlaySound();
+    }
+    void PlaySound()
+    {
+
+    }
+    void GenerateCombination()
+    {
+        for (int i = 0; i < Combination.Length; i++)
         {
-            CodeIndex = 0;
+            Combination[i] = Random.Range(0, 100);
+            Debug.Log($"Combination {i}: {Combination[i]}");
         }
+    }
+    void OpenSafe()
+    {
+        gameObject.tag = "Untagged";
+        Anim.Interact();
     }
 }

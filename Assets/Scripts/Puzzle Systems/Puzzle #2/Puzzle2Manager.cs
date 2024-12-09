@@ -87,4 +87,8 @@ public class Puzzle2Manager : MonoBehaviour
         Instantiate(FuseObjectToSpawn, PossibleFuseLocations[UnityEngine.Random.Range(0, PossibleLocations)].position,Quaternion.identity);
         Debug.Log("Spawned Fuse");
     }
+    public void SetVoltageAdjusted()
+    {
+        VoltageAdjusted = true;
+    }
 }
