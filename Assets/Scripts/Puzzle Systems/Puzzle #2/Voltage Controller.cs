@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class VoltageController : MonoBehaviour
 {
+    [Header("Objects")]
     [SerializeField]
     Puzzle2Manager PuzzleManager;
     [SerializeField]
@@ -13,8 +14,9 @@ public class VoltageController : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI VoltageText;
 
+    [Header("Voltage Values")]
     [SerializeField]
-    float VoltageValue;
+    float TargetVoltageValue;
     [SerializeField]
     float MinVoltage;
     [SerializeField]
@@ -42,18 +44,18 @@ public class VoltageController : MonoBehaviour
     }
     void UpdateTargetVoltagePanel()
     {
-        float tmp = math.abs(VoltageValue - CurrentVoltageValue);
+        float tmp = math.abs(CurrentVoltageValue - TargetVoltageValue);
         TargetVoltagePanel.transform.localScale = new Vector3((float)math.clamp((double)1 / (double)tmp, 0.1, 1), 1, 1);
-        float text = VoltageValue;
+        float text = CurrentVoltageValue;
         VoltageText.text = $"{text}V";
     }
     void GenerateVoltage()
     {
-        VoltageValue = math.round(UnityEngine.Random.Range(MinVoltage*100,MaxVoltage*100))/100;
+        TargetVoltageValue = math.round(UnityEngine.Random.Range(MinVoltage*100,MaxVoltage*100))/100;
     }
     void CheckifComplete()
     {
-        if (math.abs(VoltageValue - CurrentVoltageValue) - VoltageLeeway < 0)
+        if (math.abs(TargetVoltageValue - CurrentVoltageValue) - VoltageLeeway < 0)
         {
             PuzzleManager.SetVoltageAdjusted();
         }

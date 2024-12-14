@@ -363,6 +363,7 @@ GameObject:
   - component: {fileID: 664702932661295873}
   - component: {fileID: 8307258338670279474}
   - component: {fileID: 4598743000929888076}
+  - component: {fileID: 2444833484079955924}
   m_Layer: 6
   m_Name: Mail (3)
   m_TagString: Untagged
@@ -471,7 +472,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8307258338670279474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1736204961784756826}
+        m_TargetAssemblyTypeName: MailApp, Assembly-CSharp
+        m_MethodName: UpdateCurrentMail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2444833484079955924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054731098874500273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c69e255cdd17c4488a8503b3c49d44e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SenderName: 
+  Date: 
+  Header: 
+  Body: 
 --- !u!1 &2327569465370481936
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +855,7 @@ GameObject:
   - component: {fileID: 5966494281561445417}
   - component: {fileID: 6751063021101324181}
   - component: {fileID: 3892370791280529321}
+  - component: {fileID: 3002596740266036497}
   m_Layer: 6
   m_Name: Mail (4)
   m_TagString: Untagged
@@ -934,7 +964,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6751063021101324181}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1736204961784756826}
+        m_TargetAssemblyTypeName: MailApp, Assembly-CSharp
+        m_MethodName: UpdateCurrentMail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3002596740266036497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2472360721486417808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c69e255cdd17c4488a8503b3c49d44e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SenderName: 
+  Date: 
+  Header: 
+  Body: 
 --- !u!1 &2575460811555559727
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,6 +1005,7 @@ GameObject:
   - component: {fileID: 7133024801532070162}
   - component: {fileID: 2233110783803583110}
   - component: {fileID: 3027916294937119704}
+  - component: {fileID: 9147145242347630005}
   m_Layer: 6
   m_Name: Mail (1)
   m_TagString: Untagged
@@ -1055,7 +1114,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2233110783803583110}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1736204961784756826}
+        m_TargetAssemblyTypeName: MailApp, Assembly-CSharp
+        m_MethodName: UpdateCurrentMail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9147145242347630005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575460811555559727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c69e255cdd17c4488a8503b3c49d44e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SenderName: AAAA
+  Date: BBBB
+  Header: CCCC
+  Body: DDDD
 --- !u!1 &2794284004659344802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,6 +2325,7 @@ GameObject:
   - component: {fileID: 9087387801417221527}
   - component: {fileID: 1999904894007479384}
   - component: {fileID: 3385595561712695500}
+  - component: {fileID: 7358537280361501142}
   m_Layer: 6
   m_Name: Mail (2)
   m_TagString: Untagged
@@ -2346,7 +2434,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1999904894007479384}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1736204961784756826}
+        m_TargetAssemblyTypeName: MailApp, Assembly-CSharp
+        m_MethodName: UpdateCurrentMail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7358537280361501142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976981774672379167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c69e255cdd17c4488a8503b3c49d44e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SenderName: 
+  Date: 
+  Header: 
+  Body: 
 --- !u!1 &6299754356205934263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,7 +3583,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9087707602083722011}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1736204961784756826}
+        m_TargetAssemblyTypeName: MailApp, Assembly-CSharp
+        m_MethodName: UpdateCurrentMail
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3168383622219636523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4012,13 +4140,35 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8685888530431798100, guid: 3c585175aca715247add755ba667066f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3990635520390313735}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7208678765412724535, guid: 3c585175aca715247add755ba667066f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1736204961784756826}
   m_SourcePrefab: {fileID: 100100000, guid: 3c585175aca715247add755ba667066f, type: 3}
 --- !u!1 &573355516104625065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7208678765412724535, guid: 3c585175aca715247add755ba667066f, type: 3}
   m_PrefabInstance: {fileID: 7205382172574672030}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1736204961784756826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573355516104625065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 139c817fb8090d44ca5e1abf4376d37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 2093106599218563923}
+  RecievedMail:
+  - {fileID: 3168383622219636523}
+  - {fileID: 9147145242347630005}
+  - {fileID: 7358537280361501142}
+  - {fileID: 2444833484079955924}
+  - {fileID: 3002596740266036497}
 --- !u!224 &1978436416299339722 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8685888530431798100, guid: 3c585175aca715247add755ba667066f, type: 3}
