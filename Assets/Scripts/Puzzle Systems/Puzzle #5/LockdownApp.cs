@@ -7,7 +7,11 @@ using UnityEngine.UI;
 public class LockdownApp : MonoBehaviour
 {
     [SerializeField]
+    Monitor ComputerMonitor;
+    [SerializeField]
     GameManager gm;
+    [SerializeField]
+    Puzzle5Manager PuzzleManager;
 
     [SerializeField]
     public TMP_InputField UserInput;
@@ -35,17 +39,20 @@ public class LockdownApp : MonoBehaviour
     }
     public void SubmitAnswer()
     {
-        if (UserInput.text != null ^ UserInput.text != "")
+        if (UserInput.text != null | UserInput.text != "")
         {
             if (UserInput.text == GetCode() || gm.GetGateUnlocked())
             {
                 UnlockGate();
+                UserInput.DeactivateInputField();
+                ComputerMonitor.MonitorQuit();
             }
             else
             {
                 TriesLeft--;
                 if (TriesLeft <= 0) 
                 {
+                    ComputerMonitor.MonitorQuit();
                     gm.KillPlayer();
                 }
                 else
@@ -61,7 +68,6 @@ public class LockdownApp : MonoBehaviour
     }
     public string GetCode()
     {
-        Debug.LogError("GetCode in LockdownApp.cs is not implemented");
-        return null;
+        return PuzzleManager.GetCode();
     }
 }

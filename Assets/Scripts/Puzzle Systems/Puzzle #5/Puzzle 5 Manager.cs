@@ -5,11 +5,11 @@ using UnityEngine;
 public class Puzzle5Manager : MonoBehaviour
 {
     [SerializeField]
-    int LockdownCode;
+    string LockdownCode;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GenerateCode();
     }
 
     // Update is called once per frame
@@ -19,6 +19,15 @@ public class Puzzle5Manager : MonoBehaviour
     }
     void GenerateCode()
     {
-        LockdownCode = Random.Range(0, LockdownCode);
+        LockdownCode = Random.Range(0, 1000).ToString();
+        for (int i = 0; i < 4 - LockdownCode.Length; i++)
+        {
+            LockdownCode = "0" + LockdownCode;
+        }
+        Debug.Log($"Lockdown Code : { LockdownCode}");
+    }
+    public string GetCode()
+    {
+        return LockdownCode;
     }
 }

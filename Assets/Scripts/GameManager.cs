@@ -19,8 +19,16 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CurrentDeathTime = DeathTime;
-        DontDestroyOnLoad(gameObject);
+        if (GameObject.FindGameObjectWithTag("GameController"))
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+        
+        
     }
 
     // Update is called once per frame
@@ -33,7 +41,6 @@ public class GameManager : MonoBehaviour
             {
                 PlayerDead = false;
                 ReturnToMainMenu();
-                Destroy(gameObject);
             }
         }
     }
@@ -48,15 +55,17 @@ public class GameManager : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Main");
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.lockState = CursorLockMode.None;
-        //Cursor.visible = true;
-    }
-    public void GameStart()
-    {
+        Cursor.lockState = CursorLockMode.Locked;
         Player = GameObject.FindGameObjectWithTag("Player");
         PMovement = Player.GetComponent<MovementSystem>();
         PCamera = Player.GetComponentInChildren<CameraSystem>();
+        PlayerDead = false;
+        CurrentDeathTime = DeathTime;
+
+    }
+    public void GameStart()
+    {
+        
     }
     public void ReturnToMainMenu()
     {
@@ -71,7 +80,21 @@ public class GameManager : MonoBehaviour
     {
         PlayerDead = true; 
         PMovement.UnfreezeRotation();
-        PMovement.CanMove = false;
         PCamera.CanMove = false;
+        PMovement.CanMove = false;
+    }
+    public void FreezePlayer()
+    {
+        PMovement.CanMove = false;
+        PMovement.Freeze = true;
+        PCamera.CanMove = false;
+        Cursor.lockState = CursorLockMode.None;
+    }
+    public void UnFreezePlayer()
+    {
+        PMovement.CanMove = true;
+        PCamera.CanMove = true;
+        PMovement.Freeze = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

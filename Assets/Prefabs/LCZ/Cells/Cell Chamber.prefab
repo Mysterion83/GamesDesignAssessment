@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5918820819904540786
 Transform:
@@ -266,14 +266,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5918820819904540786}
     m_Modifications:
-    - target: {fileID: 4173554696823167527, guid: b2fe1a622dbbe284bb66c0e8373d0447, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7592344441329907961, guid: b2fe1a622dbbe284bb66c0e8373d0447, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 901327338004477543, guid: cab869879b9bbcf4ca22b1065b4bb5f5, type: 3}
       propertyPath: m_Name
       value: Door (15)
@@ -329,6 +321,14 @@ PrefabInstance:
     - target: {fileID: 9144075683563592435, guid: cab869879b9bbcf4ca22b1065b4bb5f5, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173554696823167527, guid: b2fe1a622dbbe284bb66c0e8373d0447, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7592344441329907961, guid: b2fe1a622dbbe284bb66c0e8373d0447, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

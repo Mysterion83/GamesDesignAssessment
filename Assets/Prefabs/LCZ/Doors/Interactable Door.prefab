@@ -201,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
   Anim: {fileID: 55962094833012362}
   IsOn: 0
   AnimBoolName: IsOpen
@@ -290,6 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e912d6fabf4d564eaca67316b58b128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
   ObjectsToInteractWith:
   - {fileID: 4445294924708832208}
 --- !u!4 &9147269524229476056 stripped
@@ -384,5 +386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e912d6fabf4d564eaca67316b58b128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
   ObjectsToInteractWith:
   - {fileID: 4445294924708832208}

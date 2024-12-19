@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class MovementSystem : MonoBehaviour
 {
-    GameManager gm;
     Rigidbody rb;
 
     [SerializeField]
     public bool CanMove = true;
+    [SerializeField]
+    public bool Freeze = false;
     [SerializeField]
     float MovementSpeed;
 
@@ -18,8 +19,6 @@ public class MovementSystem : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
-        gm.GameStart();
     }
 
     // Update is called once per frame
@@ -32,7 +31,11 @@ public class MovementSystem : MonoBehaviour
             rawInput *= MovementSpeed;// * Time.deltaTime;
             rb.velocity = new Vector3(rawInput.x, rb.velocity.y, rawInput.z);
         }
-        
+        if (Freeze)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
     }
     public void UnfreezeRotation()
     {

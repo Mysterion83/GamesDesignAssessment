@@ -75,6 +75,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 3.5}
   m_SizeDelta: {x: 0, y: 3.5}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!1 &560786419085858256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8907029120905554044}
+  - component: {fileID: 445163871051454574}
+  - component: {fileID: 541571939594631993}
+  - component: {fileID: 1489669238606734639}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8907029120905554044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560786419085858256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 1}
+  m_LocalScale: {x: 80, y: 55, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6597102830573042554}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &445163871051454574
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560786419085858256}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &541571939594631993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560786419085858256}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000005, y: 1, z: 1.0000005}
+  m_Center: {x: 0.000030517593, y: 0, z: 0.000003814699}
+--- !u!114 &1489669238606734639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560786419085858256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df60ea815b2b2cc4aa566bffb3d8526c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdditionalToolTip: 
+  MonitorToInteract: {fileID: 1129174372397595212}
 --- !u!1 &1406472650794464064
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +578,7 @@ MonoBehaviour:
   Date: 
   Header: 
   Body: 
+  TMPText: {fileID: 0}
 --- !u!1 &2327569465370481936
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1071,7 @@ MonoBehaviour:
   Date: 
   Header: 
   Body: 
+  TMPText: {fileID: 0}
 --- !u!1 &2575460811555559727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,6 +1222,7 @@ MonoBehaviour:
   Date: BBBB
   Header: CCCC
   Body: DDDD
+  TMPText: {fileID: 0}
 --- !u!1 &2794284004659344802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,6 +2543,7 @@ MonoBehaviour:
   Date: 
   Header: 
   Body: 
+  TMPText: {fileID: 0}
 --- !u!1 &6299754356205934263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3611,7 +3692,8 @@ MonoBehaviour:
   SenderName: Dumbass
   Date: 08/12/2024
   Header: Hey Shitass
-  Body: Hey Shitass wanna see me speedbridge.
+  Body: Hey Shitass wanna see me speedbridge [CODE].
+  TMPText: {fileID: 2268095514818532904}
 --- !u!1 &9046324820637133624
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,6 +3705,7 @@ GameObject:
   - component: {fileID: 6597102830573042554}
   - component: {fileID: 2449892578069938749}
   - component: {fileID: 3289568725140920182}
+  - component: {fileID: 1129174372397595212}
   m_Layer: 0
   m_Name: Monitor
   m_TagString: Untagged
@@ -3644,6 +3727,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6519527963989584127}
+  - {fileID: 8907029120905554044}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &2449892578069938749
@@ -3696,6 +3780,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1129174372397595212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9046324820637133624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3cf90a889351e5469450382aa1a67e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractCollider: {fileID: 560786419085858256}
 --- !u!1001 &1051213609153245615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3858,6 +3955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c63872fd0a1a0c48b02e2edb82b53a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ComputerMonitor: {fileID: 1129174372397595212}
   gm: {fileID: 0}
   UserInput: {fileID: 8545085156711892529}
   AttemptsText: {fileID: 2044793834788029401}
