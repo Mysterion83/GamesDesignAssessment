@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - BlinkingArea
+  - Dial
   - CombinbationSafe
   layers:
   - Default

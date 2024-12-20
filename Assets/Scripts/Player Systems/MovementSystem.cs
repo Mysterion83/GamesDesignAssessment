@@ -13,12 +13,16 @@ public class MovementSystem : MonoBehaviour
     public bool Freeze = false;
     [SerializeField]
     float MovementSpeed;
+    GameManager gm;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        gm.GameStart();
     }
 
     // Update is called once per frame
@@ -37,7 +41,7 @@ public class MovementSystem : MonoBehaviour
             rb.angularVelocity = Vector3.zero;
         }
     }
-    public void UnfreezeRotation()
+    public void Kill()
     {
         rb.freezeRotation = false;
         rb.AddTorque(0, 5, 1);

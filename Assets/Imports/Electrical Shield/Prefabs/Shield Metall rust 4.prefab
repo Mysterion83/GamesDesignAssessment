@@ -759,7 +759,6 @@ GameObject:
   - component: {fileID: 1688139495156316176}
   - component: {fileID: 3246970549178019890}
   - component: {fileID: 1762124594438923888}
-  - component: {fileID: 2397331419674645283}
   m_Layer: 0
   m_Name: Sphere001
   m_TagString: Interactable
@@ -855,21 +854,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 973877516759717424, guid: e35379fad6334164186a552d0738df36, type: 3}
---- !u!114 &2397331419674645283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128945305511432208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Anim: {fileID: 7658231000263974101}
-  IsOn: 0
-  AnimBoolName: IsLeverOn
 --- !u!1 &2199412944992761622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1592,7 @@ Transform:
   - {fileID: 3374711377097531939}
   - {fileID: 48413141710389343}
   - {fileID: 2795695068514977361}
+  - {fileID: 2890440221862567628}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 88.999, y: -110.00001, z: -200.93599}
 --- !u!95 &7658231000263974101
@@ -1666,7 +1651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleManager: {fileID: 0}
-  Lever: {fileID: 2397331419674645283}
+  Lever: {fileID: 4353393036622837960}
 --- !u!1 &3754373621727758685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,6 +2248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
   Anim: {fileID: 7658231000263974101}
   IsOn: 0
   AnimBoolName: IsCoverOpen
@@ -3829,6 +3815,85 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8643720556217305481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2890440221862567628}
+  - component: {fileID: 2227304454171194508}
+  - component: {fileID: 232579477888105906}
+  - component: {fileID: 4353393036622837960}
+  m_Layer: 0
+  m_Name: LeverInteractBox
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2890440221862567628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8643720556217305481}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.515, y: 0.166, z: 0.28}
+  m_LocalScale: {x: 0.38, y: 0.25, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 346077077218980271}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2227304454171194508
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8643720556217305481}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &232579477888105906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8643720556217305481}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4353393036622837960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8643720556217305481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdditionalToolTip: 
+  Anim: {fileID: 7658231000263974101}
+  IsOn: 0
+  AnimBoolName: IsLeverOn
 --- !u!1 &8715320722967459625
 GameObject:
   m_ObjectHideFlags: 0

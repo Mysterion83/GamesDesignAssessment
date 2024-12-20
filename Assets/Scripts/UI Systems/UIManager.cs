@@ -4,6 +4,8 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     [SerializeField]
+    GameManager gm;
+    [SerializeField]
     UIHotbar Hotbar;
     [SerializeField]
     GameObject PopupBox;
@@ -13,6 +15,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         PopupBox.SetActive(false);
+        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -32,11 +35,13 @@ public class UIManager : MonoBehaviour
     {
         PopupBox.SetActive(true);
         PopupBoxText.text = Text;
+        gm.FreezePlayer();
     }
     public void ClosePopup()
     {
         Debug.Log("Closing Pop-up");
         PopupBoxText.text = "";
         PopupBox.SetActive(false);
+        gm.UnFreezePlayer();
     }
 }

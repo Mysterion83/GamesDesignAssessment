@@ -38,10 +38,6 @@ public class SCP173AI : MonoBehaviour
                 gm.KillPlayer();
             }
         }
-        //else if (rb.GetAccumulatedForce().magnitude < 0.5f)
-        //{
-        //    rb.AddForce(-rb.GetAccumulatedForce());
-        //}
         else
         {
             AI.isStopped = true;

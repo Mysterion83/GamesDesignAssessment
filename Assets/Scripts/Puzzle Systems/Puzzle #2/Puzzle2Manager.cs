@@ -34,12 +34,6 @@ public class Puzzle2Manager : MonoBehaviour
     [Header("Adjust Voltage")]
     [SerializeField]
     bool VoltageAdjusted = false;
-    [SerializeField]
-    float VoltageValue;
-    [SerializeField]
-    float CurrentVoltageValue;
-    [SerializeField]
-    float VoltageLeeway;
 
 
     // Start is called before the first frame update

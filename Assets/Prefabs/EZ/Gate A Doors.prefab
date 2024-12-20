@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
   Anim: {fileID: 5383170488017537742}
   IsOn: 0
   AnimBoolName: IsOpen
@@ -298,6 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1995084b40170eb4cbb7b34286f8d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
   Anim: {fileID: 0}
   IsOn: 0
   AnimBoolName: 
@@ -312,6 +314,10 @@ PrefabInstance:
     - target: {fileID: 4779511449640329444, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
       propertyPath: m_Name
       value: Keycard Reader (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779511449640329444, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7528857023689079785, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
       propertyPath: RequiredItemID
@@ -398,6 +404,10 @@ PrefabInstance:
     - target: {fileID: 4779511449640329444, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
       propertyPath: m_Name
       value: Keycard Reader
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779511449640329444, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7528857023689079785, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
       propertyPath: RequiredItemID

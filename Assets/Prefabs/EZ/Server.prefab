@@ -67,6 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3accf23409cb2574fb6a155e8394c2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdditionalToolTip: 
+  x: 0
+  y: 0
+  PuzzleManager: {fileID: 0}
   ScreenMat: {fileID: 7031812422091291249}
 --- !u!1 &8481547248944395348
 GameObject:

@@ -16,12 +16,6 @@ public class MailApp : MonoBehaviour
     {
         ReplacePlaceHolders();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void UpdateCurrentMail(int InCurrent)
     {
         if (InCurrent == -1)
@@ -35,16 +29,35 @@ public class MailApp : MonoBehaviour
     }
     void ReplacePlaceHolders()
     {
+        //string LockdownCode = PuzzleManager.GetCode();
+        //char[] Replacement = "1234".ToCharArray();
+        //int ReplaceIndex;
+        //char LockdownCodeCharacter;
+        //for (int i = 0; i < RecievedMail.Length; i++)
+        //{
+
+        //    ReplaceIndex = Random.Range(0, LockdownCode.Length);
+        //    //Replacement[ReplaceIndex] = LockdownCode[ReplaceIndex];
+
+        //    RecievedMail[i].SetPlaceHolderText(Replacement.ToString());
+        //    Replacement[ReplaceIndex] = 'X';
+        //}
+
+
+
         string LockdownCode = PuzzleManager.GetCode();
-        char[] Replacement = "XXXX".ToCharArray();
-        int ReplaceIndex;
+        string Replacement = "1234";
+        int currentReplacementChar = 1;
+        Mail[] tempMail = new Mail[RecievedMail.Length];
         for (int i = 0; i < RecievedMail.Length; i++)
         {
-            ReplaceIndex = Random.Range(0, LockdownCode.Length);
-            //Replacement[ReplaceIndex] = LockdownCode[ReplaceIndex];
-
-            RecievedMail[i].SetPlaceHolderText(Replacement.ToString());
-            Replacement[ReplaceIndex] = 'X';
+            tempMail[i] = RecievedMail[i];
         }
+        int currentMail;
+        for (int i = 0; i < Replacement.Length; ++i)
+        {
+
+        }
+        tempMail[0].SetPlaceHolderText("");
     }
 }

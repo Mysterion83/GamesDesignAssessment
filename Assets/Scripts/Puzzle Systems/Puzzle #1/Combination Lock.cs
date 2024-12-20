@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombinationLock : MonoBehaviour
+public class CombinationLock : InteractableDial
 {
     [SerializeField]
     InteractableAnimationObject Anim;
@@ -36,7 +36,7 @@ public class CombinationLock : MonoBehaviour
     {
         Dial.transform.localRotation = Quaternion.Euler(new Vector3(-(((float)CurrentValue * 3.6f)-90), -180, -90));
     }
-    public void InputCode(float Change)
+    public override void Rotate(float Change)
     {
         int OldCurrentInput = CurrentInput;
         RawCurrentInput += Change * TurnSpeed;

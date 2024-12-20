@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1837488820429053468
 Transform:
@@ -100,7 +100,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4466793245726313130
 Transform:
@@ -205,7 +205,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2180194773953321004
 Transform:
@@ -334,7 +334,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &99203791216700073
 Transform:
@@ -438,7 +438,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &260995975873081332
 Transform:
@@ -522,7 +522,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7504845077184265740
 Transform:
@@ -626,7 +626,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2179146566010016269
 Transform:
@@ -710,7 +710,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7905757882138147050
 Transform:
@@ -806,6 +806,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2180194773953321004}
     m_Modifications:
+    - target: {fileID: 15084607520078175, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.009999997
@@ -858,6 +862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LCZ Hanging Lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 6910121938867435469, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -876,6 +884,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2180194773953321004}
     m_Modifications:
+    - target: {fileID: 15084607520078175, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.009999997
@@ -928,6 +940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LCZ Hanging Lamp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6910121938867435469, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -949,6 +965,22 @@ PrefabInstance:
     - target: {fileID: 901327338004477543, guid: cab869879b9bbcf4ca22b1065b4bb5f5, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 901327338004477543, guid: cab869879b9bbcf4ca22b1065b4bb5f5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621221247455418332, guid: cab869879b9bbcf4ca22b1065b4bb5f5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7893088926795329289, guid: cab869879b9bbcf4ca22b1065b4bb5f5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8502111449551366966, guid: cab869879b9bbcf4ca22b1065b4bb5f5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8989712862088325925, guid: cab869879b9bbcf4ca22b1065b4bb5f5, type: 3}
       propertyPath: m_LocalScale.x
@@ -1018,6 +1050,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2180194773953321004}
     m_Modifications:
+    - target: {fileID: 45240342100406151, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488006238486896000, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 653350725634164165, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253505772979290618, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789277087431355320, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534345336431335250, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069871081908747536, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3236501345593181837, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
       propertyPath: RequiredItemID
       value: 2
@@ -1045,6 +1105,10 @@ PrefabInstance:
     - target: {fileID: 3946569301724540153, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
       propertyPath: m_LocalPosition.z
       value: 2.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139673519308771853, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5286662856407408354, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
       propertyPath: RequiredItemID
@@ -1122,9 +1186,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7037845451995346665, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165820873438529007, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217732430574745922, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501556595428793515, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897936863837229824, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8310149181464494451, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
       propertyPath: m_Name
       value: Interactable Locked Door Double
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310149181464494451, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1169,6 +1257,18 @@ PrefabInstance:
     - target: {fileID: 427599713079068473, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
       propertyPath: m_Name
       value: Interactable Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 427599713079068473, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339326577660116744, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208548256845617889, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3005314062961695215, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
       propertyPath: m_LocalScale.x
@@ -1218,6 +1318,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3770821533880569370, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266809207234273913, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725260664259711938, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5688356267691311009, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750995743832757319, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640250273790491482, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483275938286258096, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200181203380585359, guid: 28f030e2aeac66649ab5455e2bbfde28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1236,6 +1368,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2180194773953321004}
     m_Modifications:
+    - target: {fileID: 15084607520078175, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3712128818524237833, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.009999997
@@ -1287,6 +1423,10 @@ PrefabInstance:
     - target: {fileID: 6910121938867435469, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
       propertyPath: m_Name
       value: LCZ Hanging Lamp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910121938867435469, guid: 7639dfbecc3de81428e399e38c6283ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

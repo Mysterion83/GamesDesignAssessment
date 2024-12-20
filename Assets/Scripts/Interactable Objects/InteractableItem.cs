@@ -13,6 +13,7 @@ public class InteractableItem : Interactable
     void Start()
     {
         ItemToGive = ItemPool.GetItemViaID(ItemID);
+        if (GameObject.FindGameObjectWithTag("Player") == null) return;
         PlayerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
     }
 

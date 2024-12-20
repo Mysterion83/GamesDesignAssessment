@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameObject.FindGameObjectWithTag("GameController"))
+        if (GameObject.FindGameObjectWithTag("GameController") != this.gameObject)
         {
             Destroy(gameObject);
         }
@@ -27,8 +27,6 @@ public class GameManager : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
-        
-        
     }
 
     // Update is called once per frame
@@ -55,17 +53,16 @@ public class GameManager : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Main");
+        
+    }
+    public void GameStart()
+    {
         Cursor.lockState = CursorLockMode.Locked;
         Player = GameObject.FindGameObjectWithTag("Player");
         PMovement = Player.GetComponent<MovementSystem>();
         PCamera = Player.GetComponentInChildren<CameraSystem>();
         PlayerDead = false;
         CurrentDeathTime = DeathTime;
-
-    }
-    public void GameStart()
-    {
-        
     }
     public void ReturnToMainMenu()
     {
@@ -79,7 +76,7 @@ public class GameManager : MonoBehaviour
     public void KillPlayer()
     {
         PlayerDead = true; 
-        PMovement.UnfreezeRotation();
+        PMovement.Kill();
         PCamera.CanMove = false;
         PMovement.CanMove = false;
     }

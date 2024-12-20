@@ -30,6 +30,7 @@ public class InteractionSystem : MonoBehaviour
         {
             TooltipText.text = "[E] Interact";
             Interactable interaction = hit.collider.gameObject.GetComponent<Interactable>();
+            if (interaction == null) return;
             string AdditionalTooltipText = interaction.GetAdditionalToolTip();
             if (AdditionalTooltipText != null)
             {
@@ -41,13 +42,11 @@ public class InteractionSystem : MonoBehaviour
                 interaction.Interact();
             }
         }
-        else if (hit.collider.gameObject.tag == "CombinbationSafe")
+        else if (hit.collider.gameObject.tag == "Dial")
         {
             TooltipText.text = "[Mouse Up] Rotate Dial Right\n[Mouse Down] Rotate Dial Left";
-            CombinationLock interaction = hit.collider.gameObject.GetComponent<CombinationLock>();
-            interaction.InputCode(Input.mouseScrollDelta.y * Time.deltaTime);
-
-            
+            InteractableDial interaction = hit.collider.gameObject.GetComponent<InteractableDial>();
+            interaction.Rotate(Input.mouseScrollDelta.y * Time.deltaTime);
         }
     }
 }
