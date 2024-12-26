@@ -64,6 +64,10 @@ public class GameManager : MonoBehaviour
         PlayerDead = false;
         CurrentDeathTime = DeathTime;
     }
+    public void LoadEnding()
+    {
+        SceneManager.LoadScene("Ending");
+    }
     public void ReturnToMainMenu()
     {
         Cursor.lockState = CursorLockMode.None;

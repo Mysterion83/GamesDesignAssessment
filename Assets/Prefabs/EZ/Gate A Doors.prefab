@@ -74,6 +74,7 @@ MonoBehaviour:
   Anim: {fileID: 5383170488017537742}
   IsOn: 0
   AnimBoolName: IsOpen
+  Audio: {fileID: 0}
 --- !u!1 &328625625340996892
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +304,7 @@ MonoBehaviour:
   Anim: {fileID: 0}
   IsOn: 0
   AnimBoolName: 
+  Audio: {fileID: 0}
 --- !u!1001 &6896611351342037567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -322,6 +324,10 @@ PrefabInstance:
     - target: {fileID: 7528857023689079785, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
       propertyPath: RequiredItemID
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528857023689079785, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
+      propertyPath: AdditionalToolTip
+      value: Requires A Facility Manager Keycard And to Lift the Lockdown.
       objectReference: {fileID: 0}
     - target: {fileID: 7528857023689079785, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
       propertyPath: ObjectsToInteractWith.Array.size
@@ -412,6 +418,10 @@ PrefabInstance:
     - target: {fileID: 7528857023689079785, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
       propertyPath: RequiredItemID
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528857023689079785, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
+      propertyPath: AdditionalToolTip
+      value: Requires A Facility Manager Keycard And to Lift the Lockdown.
       objectReference: {fileID: 0}
     - target: {fileID: 7528857023689079785, guid: 173cd5b014ed98f44b8f82d06eefb3d7, type: 3}
       propertyPath: ObjectsToInteractWith.Array.size

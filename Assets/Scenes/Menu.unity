@@ -2102,7 +2102,8 @@ MonoBehaviour:
     Games, n.d. SCP - Containment Breach. [Online] \r\nAvailable at: https://www.scpcbgame.com\r\nElectrical
     shield: Factory props - \nhttps://assetstore.unity.com/packages/3d/props/electrical-shield-118266\nSockets
     and Fuse Box Pack: TrueBlue Studios -\nhttps://assetstore.unity.com/packages/3d/props/sockets-and-fuse-box-pack-148620\nRust
-    Key: Aleksn09 - https://assetstore.unity.com/packages/3d/props/rust-key-167590\n"
+    Key: Aleksn09 - https://assetstore.unity.com/packages/3d/props/rust-key-167590\nRubble
+    and Debris - Modular Set - Free Sample - \nhttps://assetstore.unity.com/packages/3d/props/exterior/rubble-and-debris-modular-set-free-sample-118763\n\nAudio:\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2129,8 +2130,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3516,6 +3517,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1313817838698173546, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1316803203692908262, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1335717138299449610, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3526,19 +3535,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1535478316865223359, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1535478316865223359, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1535478316865223359, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 9.75
       objectReference: {fileID: 0}
     - target: {fileID: 1535478316865223359, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 1695072358878213579, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3547,6 +3556,10 @@ PrefabInstance:
     - target: {fileID: 2078262368391865443, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097639692167501913, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2335849010788424156, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3570,19 +3583,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2617801065104720659, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2617801065104720659, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2617801065104720659, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 9.75
       objectReference: {fileID: 0}
     - target: {fileID: 2617801065104720659, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 2632492322934350381, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3594,19 +3607,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2791380801839552271, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2791380801839552271, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2791380801839552271, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 9.75
       objectReference: {fileID: 0}
     - target: {fileID: 2791380801839552271, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -34.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065258642012937500, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: ObjectsToInteractWith.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3115357913014995060, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3615,6 +3632,10 @@ PrefabInstance:
     - target: {fileID: 3222193796944437575, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312629639272785048, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3342031577090274322, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3643,6 +3664,10 @@ PrefabInstance:
     - target: {fileID: 3934726110091950811, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027113874098895790, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4115521045656054349, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3720,6 +3745,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6108993421114917339, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6192464563848147091, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6202081176435560700, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3747,6 +3780,18 @@ PrefabInstance:
     - target: {fileID: 6622482731963048155, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6800790968621095470, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909587496953114501, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092160297310540889, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7551362340439438780, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3778,23 +3823,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7991960177816829137, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7991960177816829137, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7991960177816829137, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 9.75
       objectReference: {fileID: 0}
     - target: {fileID: 7991960177816829137, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -26.599998
       objectReference: {fileID: 0}
     - target: {fileID: 8020999055486348541, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8041347595729452187, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8098444796165217139, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099295362283379368, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8103191736114417000, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8234704320364325694, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3802,19 +3863,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8260836119825147637, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8260836119825147637, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8260836119825147637, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 9.75
       objectReference: {fileID: 0}
     - target: {fileID: 8260836119825147637, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -11.4
       objectReference: {fileID: 0}
     - target: {fileID: 8323392453995653220, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11053,7 +11114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1890334563
 RectTransform:
   m_ObjectHideFlags: 0

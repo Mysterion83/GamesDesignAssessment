@@ -17,6 +17,7 @@ public class VoltageController : MonoBehaviour
     GameObject Dial;
     [SerializeField]
     GameObject DialCollider;
+    AudioSource Audio;
 
     [Header("Voltage Values")]
     [SerializeField]
@@ -40,6 +41,7 @@ public class VoltageController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Audio = GetComponent<AudioSource>();
         GenerateVoltage();
     }
 
@@ -78,10 +80,15 @@ public class VoltageController : MonoBehaviour
     }
     public void Rotate(float input)
     {
+        float OldRotation = CurrentRotation;
         CurrentRotation += input * TurnSpeed * 5;
         CurrentRotation %= 360;
         CurrentVoltageValue += input * TurnSpeed;
         CurrentVoltageValue = math.clamp(CurrentVoltageValue, MinVoltage, MaxVoltage);
+        if (OldRotation != CurrentRotation)
+        {
+            Audio.Play();
+        }
         CheckifComplete();
     }
 }

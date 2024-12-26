@@ -11,20 +11,16 @@ public class Puzzle5Manager : MonoBehaviour
     {
         GenerateCode();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void GenerateCode()
     {
-        LockdownCode = Random.Range(0, 1000).ToString();
-        for (int i = 0; i < 4 - LockdownCode.Length; i++)
+        LockdownCode = Random.Range(0, 10000).ToString();
+        int ZerosToAdd = 4 - LockdownCode.Length;
+        for (int i = 0; i < ZerosToAdd; i++)
         {
             LockdownCode = "0" + LockdownCode;
         }
-        Debug.Log($"Lockdown Code : { LockdownCode}");
+        
+        Debug.Log($"Lockdown Code : { LockdownCode }");
     }
     public string GetCode()
     {

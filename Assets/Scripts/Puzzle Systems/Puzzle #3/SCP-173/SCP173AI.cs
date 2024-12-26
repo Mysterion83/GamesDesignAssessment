@@ -14,6 +14,8 @@ public class SCP173AI : MonoBehaviour
     float KillRange;
     BlinkingSystem PlayerBlinking;
     NavMeshAgent AI;
+    AudioSource Audio;
+    bool AudioPlaying = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,10 @@ public class SCP173AI : MonoBehaviour
         PlayerBlinking = GameObject.FindGameObjectWithTag("Player").GetComponent<BlinkingSystem>();
         AI = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
+        
+        Audio = GetComponent<AudioSource>();
+
+
         gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
@@ -31,6 +37,11 @@ public class SCP173AI : MonoBehaviour
     {
         if (!CameraObjectDetection.SeenByCamera ^ PlayerBlinking.IsBlinking && PlayerBlinking.InBlinkingArea)
         {
+            if (!AudioPlaying)
+            {
+                Audio.Play();
+                AudioPlaying = true;
+            }
             MoveTowardsPlayer();
             if (CanKillPlayer())
             {
@@ -40,6 +51,11 @@ public class SCP173AI : MonoBehaviour
         }
         else
         {
+            if (AudioPlaying)
+            {
+                Audio.Stop();
+                AudioPlaying = false;
+            }
             AI.isStopped = true;
             AI.velocity = Vector3.zero;
         }

@@ -1084,7 +1084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3236501345593181837, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
       propertyPath: AdditionalToolTip
-      value: Requires a better Keycard
+      value: Requires a Major Scientist Keycard
       objectReference: {fileID: 0}
     - target: {fileID: 3236501345593181837, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
       propertyPath: ObjectsToInteractWith.Array.size
@@ -1116,7 +1116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5286662856407408354, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
       propertyPath: AdditionalToolTip
-      value: Requires a better Keycard
+      value: Requires a Major Scientist Keycard
       objectReference: {fileID: 0}
     - target: {fileID: 5286662856407408354, guid: 379f20ac43f511046ab06b1f237ca511, type: 3}
       propertyPath: ObjectsToInteractWith.Array.size

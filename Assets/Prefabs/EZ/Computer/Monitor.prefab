@@ -248,11 +248,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.5
+  m_fontSize: 2.2
   m_fontSizeBase: 1.5
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -574,11 +574,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c69e255cdd17c4488a8503b3c49d44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SenderName: 
-  Date: 
-  Header: 
-  Body: 
-  TMPText: {fileID: 0}
+  SenderName: Dr. Bright
+  Date: 18/7/2014
+  Header: Hacked into the System
+  Body: I just want to say I was bored out of my mind doing me stuff and managed
+    to hack into the lockdown system and got the code [CODE]. The O-5 Council should
+    really invest more into security especially that The Chaos Insurgency is more
+    active.
 --- !u!1 &2327569465370481936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,11 +1069,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c69e255cdd17c4488a8503b3c49d44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SenderName: 
-  Date: 
-  Header: 
-  Body: 
-  TMPText: {fileID: 0}
+  SenderName: '0-5 Council '
+  Date: 4/7/2014
+  Header: New Lockdown Procedures
+  Body: "Due to the Chaos Insurgency\u2019s recent Activities and recent attacks
+    on sites such as Site-02, we are implementing new lockdown procedures in case
+    of a containment breach which include new lockdown code which automatically obfuscate
+    to leave only 1 letter per email. The current Lockdown Code is [CODE]."
 --- !u!1 &2575460811555559727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,11 +1222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c69e255cdd17c4488a8503b3c49d44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SenderName: AAAA
-  Date: BBBB
-  Header: CCCC
-  Body: DDDD
-  TMPText: {fileID: 0}
+  SenderName: Dr. Klein
+  Date: 29/7/2014
+  Header: Need a Keycard Replacement
+  Body: Hey, I might need a new Scientist Keycard as I was attacked on the way to
+    work by some masked up freak and lost it, yes again. The Lockdown code is [CODE]
+    if you need authentication.
 --- !u!1 &2794284004659344802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1824,81 @@ MonoBehaviour:
   CurrentApp: 0
   MailApp: {fileID: 573355516104625065}
   LockdownApp: {fileID: 7682285621103107736}
+--- !u!1 &3940283643037015285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4311975377360069616}
+  - component: {fileID: 4914120313330625892}
+  - component: {fileID: 682642736458711439}
+  m_Layer: 6
+  m_Name: Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4311975377360069616
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940283643037015285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1478265020455451449}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.25, y: 0}
+  m_SizeDelta: {x: -0.5, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4914120313330625892
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940283643037015285}
+  m_CullTransparentMesh: 1
+--- !u!114 &682642736458711439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940283643037015285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 61beacef09651f04dae725ba550ff546, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &4159318087145646084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,11 +1995,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.5
+  m_fontSize: 2.2
   m_fontSizeBase: 1.5
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -2539,11 +2619,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c69e255cdd17c4488a8503b3c49d44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SenderName: 
-  Date: 
-  Header: 
-  Body: 
-  TMPText: {fileID: 0}
+  SenderName: Dr. Bright
+  Date: 18/7/2014
+  Header: "Wow it\u2019s Obfuscated"
+  Body: "I Can\u2019t believe that the technology for obfuscating the lockdown code
+    works. Look I\u2019ll send it again [CODE]. See?"
 --- !u!1 &6299754356205934263
 GameObject:
   m_ObjectHideFlags: 0
@@ -2639,9 +2719,9 @@ MonoBehaviour:
   m_fontSize: 4
   m_fontSizeBase: 4
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
+  m_fontSizeMax: 4
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -2743,9 +2823,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'XX:XX
+  m_text: '15:36
 
-    XX/XX/XXX'
+    02/08/2014'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2910,11 +2990,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.5
+  m_fontSize: 2.2
   m_fontSizeBase: 1.5
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -3048,11 +3128,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.5
+  m_fontSize: 2.2
   m_fontSizeBase: 1.5
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -3295,6 +3375,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7724055766644272892}
+  - {fileID: 4311975377360069616}
   m_Father: {fileID: 6966086479576277563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3501,11 +3582,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.5
+  m_fontSize: 2.2
   m_fontSizeBase: 1.5
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -3689,11 +3770,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c69e255cdd17c4488a8503b3c49d44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SenderName: Dumbass
-  Date: 08/12/2024
-  Header: Hey Shitass
-  Body: Hey Shitass wanna see me speedbridge [CODE].
-  TMPText: {fileID: 2268095514818532904}
+  SenderName: Dr. Porter
+  Date: 2/8/2014
+  Header: Possible Chaos Insurgency Spy
+  Body: "Hey, when I was setting up the General testing chamber for the Class-D -
+    Scientist cooperation test later today, a person claiming to be Dr. Klein wanted
+    to tweak something in the General Testing Chamber and stated the lockdown code
+    for some reason saying \u201C[CODE]\u201D. He looked nothing like Klein, and
+    I think he wants to cause a breach. He is currently at SCP-079\u2019s Chamber
+    if you want to send security guards over."
 --- !u!1 &9046324820637133624
 GameObject:
   m_ObjectHideFlags: 0
@@ -3957,6 +4042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ComputerMonitor: {fileID: 1129174372397595212}
   gm: {fileID: 0}
+  PuzzleManager: {fileID: 0}
   UserInput: {fileID: 8545085156711892529}
   AttemptsText: {fileID: 2044793834788029401}
 --- !u!224 &8510906833037449979 stripped
@@ -4267,6 +4353,7 @@ MonoBehaviour:
   - {fileID: 7358537280361501142}
   - {fileID: 2444833484079955924}
   - {fileID: 3002596740266036497}
+  PuzzleManager: {fileID: 0}
 --- !u!224 &1978436416299339722 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8685888530431798100, guid: 3c585175aca715247add755ba667066f, type: 3}

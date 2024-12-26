@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Mathematics;
+using UnityEngine.Rendering;
 
 public class CombinationLock : InteractableDial
 {
+    AudioController Audio;
     [SerializeField]
     InteractableAnimationObject Anim;
     [SerializeField]
@@ -25,6 +28,7 @@ public class CombinationLock : InteractableDial
     // Start is called before the first frame update
     void Start()
     {
+        Audio = GetComponent<AudioController>();
         CodeIndex = 0;
         GenerateCombination();
     }
@@ -42,12 +46,12 @@ public class CombinationLock : InteractableDial
         RawCurrentInput += Change * TurnSpeed;
         if (RawCurrentInput < 0) RawCurrentInput = 99;
         else if (RawCurrentInput >= 100) RawCurrentInput = 0;
-        Debug.Log($"RawInput: {RawCurrentInput}");
         CurrentInput = ((int)RawCurrentInput);
         
 
         if (Combination[CodeIndex] == CurrentInput)
         {
+            if (Combination.Length < CodeIndex-1) Audio.Play(2, 1, 1);
             CodeIndex++;
             Debug.Log($"Moved to next CodeIndex: {CodeIndex}");
             if (CodeIndex >= Combination.Length)
@@ -59,13 +63,16 @@ public class CombinationLock : InteractableDial
     }
     void PlaySound()
     {
-
+        float volume = math.abs(CurrentInput - Combination[CodeIndex]);
+        volume = 1 / volume;
+        volume = math.clamp(volume, 0, 1);
+        Audio.Play(0, volume, 1);
     }
     void GenerateCombination()
     {
         for (int i = 0; i < Combination.Length; i++)
         {
-            Combination[i] = Random.Range(0, 100);
+            Combination[i] = UnityEngine.Random.Range(0, 100);
             Debug.Log($"Combination {i}: {Combination[i]}");
         }
     }
@@ -73,5 +80,6 @@ public class CombinationLock : InteractableDial
     {
         gameObject.tag = "Untagged";
         Anim.Interact();
+        Audio.Play(1, 0.5f, 1);
     }
 }

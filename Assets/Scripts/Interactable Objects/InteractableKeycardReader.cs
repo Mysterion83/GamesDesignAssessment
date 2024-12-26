@@ -18,6 +18,7 @@ public class InteractableKeycardReader : InteractableButton
     {
         if (inventory.GetCurrentHeldItemID() == RequiredItemID)
         {
+            PlayAudio();
             foreach (Interactable objects in ObjectsToInteractWith)
             {
                 objects.Interact();

@@ -6,6 +6,7 @@ public class VCDial : InteractableDial
 {
     [SerializeField]
     VoltageController VC;
+    
     public override void Rotate(float input)
     {
         VC.Rotate(input);

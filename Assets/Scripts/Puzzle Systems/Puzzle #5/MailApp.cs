@@ -47,17 +47,36 @@ public class MailApp : MonoBehaviour
 
         string LockdownCode = PuzzleManager.GetCode();
         string Replacement = "1234";
-        int currentReplacementChar = 1;
-        Mail[] tempMail = new Mail[RecievedMail.Length];
+        int currentReplacementChar = 0;
+        List<Mail> tempMail = new List<Mail>();
         for (int i = 0; i < RecievedMail.Length; i++)
         {
-            tempMail[i] = RecievedMail[i];
+            tempMail.Add(RecievedMail[i]);
         }
         int currentMail;
-        for (int i = 0; i < Replacement.Length; ++i)
+        for (int i = 0; i < LockdownCode.Length; ++i)
         {
-
+            currentMail = Random.Range(0, tempMail.Count);
+            tempMail[currentMail].SetPlaceHolderText(GetReplacementCode(LockdownCode, i));
+            tempMail.RemoveAt(currentMail);
         }
-        tempMail[0].SetPlaceHolderText("");
+        tempMail[0].SetPlaceHolderText("[REDACTED]");
+    }
+    string GetReplacementCode(string InCode, int CharToKeep)
+    {
+        string output = "";
+
+        for (int i = 0; i < InCode.Length; ++i) 
+        {
+            if (i == CharToKeep)
+            {
+                output += InCode[i];
+            }
+            else
+            {
+                output += "X";
+            }
+        }
+        return output;
     }
 }

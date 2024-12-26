@@ -4,56 +4,46 @@ using UnityEngine;
 
 public class Puzzle4Manager : Interactable
 {
+    [Header("Puzzle Completion")]
     [SerializeField]
     public bool PuzzleComplete = false;
-    [SerializeField]
-    public int[,] LightsLayout; //x,y 
-    [SerializeField]
-    public ServerScreen[] ScreenLights;
-    ServerScreen[,] ScreenLights2D;
-    [SerializeField]
-    public Server[] ServerRacks;
-    Server[,] ServerRacks2D;
-
     [SerializeField]
     InteractableAnimationObject[] DoorsToOpen;
     [SerializeField]
     bool DoorsOpen;
 
-    //-1 = Off, 0 = Doesn't matter, 1 = on, 2d arrays aren't supported by the inspector ;-;
-    // Start is called before the first frame update
+
+
+    [Header("Puzzle Varaibles")]
+    //-1 = Off, 0 = Doesn't matter, 1 = on, 2d arrays aren't supported by the inspector
+    [SerializeField]
+    public int[,] LightsLayout; //x,y 
+
+    [SerializeField]
+    public Server[] ScreenLights;
+    Server[,] ScreenLights2D;
+
+    [SerializeField]
+    public Server[] ServerRacks;
+    Server[,] ServerRacks2D;
+
+    
+
+    
     void Start()
     {
         GetDefaultLayout();
     }
+
     void GetDefaultLayout()
     {
         LightsLayout = new int[,] { { -1, -1, 0, 0 }, { -1, -1, -1, -1 }, { -1, -1, -1, -1 } };
         PutScreensAndServersTo2D();
         UpdateServersAndScreens();
     }
-    void PutScreensAndServersTo2Dold()
-    {
-        ScreenLights2D = new ServerScreen[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
-        ServerRacks2D = new Server[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
-        int index = 0;
-        for (int i = 0; i < LightsLayout.GetLength(0); i++)
-        {
-            for (int j = 0; j < LightsLayout.GetLength(1); j++)
-            {
-                if ((i == 0 && j == 2) ^ ((i == 0 && j == 3)));
-                else 
-                {
-                    ScreenLights2D[i, j] = ScreenLights[index];
-                    ServerRacks2D[i, j] = ServerRacks[index];
-                    index++;
-                }
-            }
-        }
-    }
     void PutScreensAndServersTo2D()
     {
-        ScreenLights2D = new ServerScreen[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
+        ScreenLights2D = new Server[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
         ServerRacks2D = new Server[LightsLayout.GetLength(0), LightsLayout.GetLength(1)];
         int index = 0;
 
@@ -61,24 +51,16 @@ public class Puzzle4Manager : Interactable
         {
             for (int j = 0; j < LightsLayout.GetLength(1); j++)
             {
-                if ((i == 0 && j == 2) || (i == 0 && j == 3))
-                    continue;
-
-                if (index < ScreenLights.Length && index < ServerRacks.Length)
+                if ((i == 0 && j == 2) || (i == 0 && j == 3));
+                else if (index < ServerRacks.Length && index < ServerRacks.Length)
                 {
                     ScreenLights2D[i, j] = ScreenLights[index];
                     ServerRacks2D[i, j] = ServerRacks[index];
                     index++;
                 }
-                else
-                {
-                    Debug.LogError($"Index {index} out of bounds for ScreenLights or ServerRacks.");
-                    return;
-                }
             }
         }
     }
-
     void CheckIsComplete()
     {
         for (int i = 0; i < LightsLayout.GetLength(0); i++)
@@ -126,12 +108,12 @@ public class Puzzle4Manager : Interactable
                 if (LightsLayout[i,j] == -1)
                 {
                     ServerRacks2D[i, j].TurnOff();
-                    //ScreenLights2D[i, j].TurnOff();
+                    ScreenLights2D[i, j].TurnOff();
                 }
                 else if (LightsLayout[i, j] == 1)
                 {
                     ServerRacks2D[i, j].TurnOn();
-                    //ScreenLights2D[i, j].TurnOn();
+                    ScreenLights2D[i, j].TurnOn();
                 }
             }
         }

@@ -2,16 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Server : Interactable
+public class ServerScreen : MonoBehaviour
 {
     [SerializeField]
-    public int x;
-    [SerializeField]
-    public int y;
-    [SerializeField]
-    Puzzle4Manager PuzzleManager;
-    [SerializeField]
-    Renderer ScreenMat;
+    Renderer Mat;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,14 +13,10 @@ public class Server : Interactable
     }
     public void TurnOn()
     {
-        ScreenMat.material.color = Color.green;
+        Mat.material.color = Color.green;
     }
     public void TurnOff()
     {
-        ScreenMat.material.color = Color.red;
-    }
-    public override void Interact()
-    {
-        PuzzleManager.UpdateCell(x,y);
+        Mat.material.color = Color.red;
     }
 }
