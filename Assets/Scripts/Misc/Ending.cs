@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Ending : MonoBehaviour
@@ -8,6 +9,8 @@ public class Ending : MonoBehaviour
     float Timer;
     [SerializeField]
     InteractableAnimationObject Door;
+    [SerializeField]
+    AudioController AC;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +22,14 @@ public class Ending : MonoBehaviour
     void FixedUpdate()
     {
         Timer += Time.deltaTime;
+
+    }
+    void PlayGunCock()
+    {
+        AC.Play(0, 1, 1);
+    }
+    void PlayGunShot()
+    {
+        AC.Play(1, 1, 1);
     }
 }

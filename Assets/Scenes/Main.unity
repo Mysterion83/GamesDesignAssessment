@@ -5677,6 +5677,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 6959246608120965007, guid: 8083930637c1ff34595d2ded11b84040, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 7156880760223036577, guid: 8191e21adc7c07445afde53955a27dfe, type: 2}
     - target: {fileID: 7361747241792854894, guid: 8083930637c1ff34595d2ded11b84040, type: 3}
       propertyPath: BlinkingTimer
       value: 7
