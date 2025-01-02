@@ -14,7 +14,7 @@ public class InteractableItem : Interactable
     {
         ItemToGive = ItemPool.GetItemViaID(ItemID);
         if (GameObject.FindGameObjectWithTag("Player") == null) return;
-        PlayerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
+        PlayerInventory = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<InventorySystem>();
     }
 
     public override void Interact()

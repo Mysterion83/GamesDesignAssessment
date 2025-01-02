@@ -11,7 +11,7 @@ public class FuseBox : InteractableKeycardReader
 
     public void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<InventorySystem>();
         Fuse.SetActive(false);
     }
 

@@ -24,12 +24,6 @@ public class Puzzle2Manager : MonoBehaviour
     GameObject FuseObjectToSpawn;
     [SerializeField]
     List<Transform> PossibleFuseLocations;
-    
-
-    [Header("WireBox")]
-    [SerializeField]
-    bool WiresConnected = false;
-
 
     [Header("Adjust Voltage")]
     [SerializeField]
@@ -64,7 +58,7 @@ public class Puzzle2Manager : MonoBehaviour
     }
     bool IsPuzzleSolved()
     {
-        return circuitBreakerOn && FuseInserted && WiresConnected && VoltageAdjusted;
+        return circuitBreakerOn && FuseInserted && VoltageAdjusted;
     }
     void OpenDoors()
     {

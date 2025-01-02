@@ -309,7 +309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &40927016
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2336,7 +2336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &288480923
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2479,7 +2479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3542,6 +3542,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 1232705243180025948, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1313817838698173546, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: PuzzleManager
       value: 
@@ -3674,6 +3678,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 3488254860416716015, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3531420066509507039, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3694,6 +3702,10 @@ PrefabInstance:
       propertyPath: PuzzleManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4084693319064997643, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4115521045656054349, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3706,6 +3718,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 4886890345300537066, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4983674864364146555, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3713,6 +3729,10 @@ PrefabInstance:
     - target: {fileID: 5099837654249261539, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141437118652684191, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5312150049274173396, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3782,9 +3802,17 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6225439797463157472, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6444740756595604639, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457059144007001455, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6508194088990816457, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3818,6 +3846,10 @@ PrefabInstance:
       propertyPath: PuzzleManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7135772497406154189, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7551362340439438780, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3842,9 +3874,17 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7886888675865722435, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7935743895057494828, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965712840561660730, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
+      propertyPath: PuzzleManager
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7991960177816829137, guid: 1716c5101196ae34d9b278069aab2a00, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8146,6 +8186,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 606863690529158793, guid: 1d3088cd9ae481d4bb39c0b6d0cdfdc4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 793870790500387769, guid: 1d3088cd9ae481d4bb39c0b6d0cdfdc4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -8666,11 +8710,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: Off
       m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: On
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9072,7 +9114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df073e2c8428e8e4a8d88c5d5b61a913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ResolutionDropDownGameObject: {fileID: 1162012337}
+  ResolutionDropDown: {fileID: 1162012339}
 --- !u!1 &1587390443
 GameObject:
   m_ObjectHideFlags: 0
@@ -11275,7 +11317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1890334563
 RectTransform:
   m_ObjectHideFlags: 0

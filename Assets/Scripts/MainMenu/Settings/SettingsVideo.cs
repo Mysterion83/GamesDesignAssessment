@@ -1,18 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SettingsVideo : MonoBehaviour
 {
     [SerializeField]
-    GameObject ResolutionDropDownGameObject;
-    Dropdown ResolutionDropDown;
+    TMP_Dropdown ResolutionDropDown;
+    bool HasInitalised = false;
 
     Resolution[] Resolutions;
     // Start is called before the first frame update
     void Start()
     {
-        ResolutionDropDown = ResolutionDropDownGameObject.GetComponent<Dropdown>();
         Resolutions = Screen.resolutions;
 
         List<string> ResolutionsInDropDown = new List<string>();
@@ -34,6 +34,7 @@ public class SettingsVideo : MonoBehaviour
         ResolutionDropDown.AddOptions(ResolutionsInDropDown);
         ResolutionDropDown.value = DefaultResolution;
         ResolutionDropDown.RefreshShownValue();
+        ToggleFullScreen(true);
     }
     public void SetResolution(int ResolutionValue)
     {
@@ -43,5 +44,9 @@ public class SettingsVideo : MonoBehaviour
     public void ToggleFullScreen(bool FullScreen)
     {
         Screen.fullScreen = FullScreen;
+    }
+    public void ToggleVSync(int Vysnc)
+    {
+        if (Vysnc == 0) ;
     }
 }

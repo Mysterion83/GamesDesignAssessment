@@ -11,7 +11,7 @@ public class InteractableKeycardReader : InteractableButton
 
     private void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<InventorySystem>();
     }
     
     public override void Interact()

@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Player = GameObject.FindGameObjectWithTag("Player");
-        PMovement = Player.GetComponent<MovementSystem>();
+        PMovement = Player.GetComponentInChildren<MovementSystem>();
         PCamera = Player.GetComponentInChildren<CameraSystem>();
         PlayerDead = false;
         CurrentDeathTime = DeathTime;
@@ -97,5 +97,9 @@ public class GameManager : MonoBehaviour
         PCamera.CanMove = true;
         PMovement.Freeze = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+    public bool GetPlayerDead()
+    {
+        return PlayerDead;  
     }
 }

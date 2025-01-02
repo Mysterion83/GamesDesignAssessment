@@ -55,6 +55,7 @@ Transform:
   - {fileID: 7331266536488360187}
   - {fileID: 4283378970637364212}
   - {fileID: 7748451519920966291}
+  - {fileID: 7940059368161337308}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4694934988453556843
@@ -402,6 +403,80 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8989712862088325925, guid: cab869879b9bbcf4ca22b1065b4bb5f5, type: 3}
   m_PrefabInstance: {fileID: 2077178555338710384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2353367976424445002
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5918820819904540786}
+    m_Modifications:
+    - target: {fileID: 2937707031884047043, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: Text
+      value: On behalf of the SCP Foundation and our staff we welcome you to an exciting
+        one-month working period in one of our top-secret research facilities. Unfortunately,
+        the exact details of your upcoming work assignments are highly classified,
+        but please read this document carefully to make your stay as safe and pleasant
+        as possible. Each of the Class D Personnel has been given a numerical designation.
+        Your personal designation is D-0157. Please memorize your designation, as
+        the staff will use it to refer to you from now on. <color=red><b>Please refrain
+        from reading other documents without authorisation as it could include classified
+        Information.</color></b>
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017087614883796818, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+      propertyPath: m_Name
+      value: Document
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+--- !u!4 &7940059368161337308 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5663301106722917270, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
+  m_PrefabInstance: {fileID: 2353367976424445002}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2972501287394264105
 PrefabInstance:

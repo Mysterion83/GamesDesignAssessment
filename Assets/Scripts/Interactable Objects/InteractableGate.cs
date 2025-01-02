@@ -14,7 +14,7 @@ public class InteractableGate : InteractableKeycardReader
     {
         if (inventory == null)
         {
-            inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
+            inventory = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<InventorySystem>();
         }
         if (gm == null)
         {

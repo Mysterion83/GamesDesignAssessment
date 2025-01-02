@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class SettingsGraphics : MonoBehaviour
 {
@@ -19,11 +20,11 @@ public class SettingsGraphics : MonoBehaviour
     {
         if (On == 0)
         {
-            QualitySettings.shadows = ShadowQuality.All;
+            Camera.main.GetUniversalAdditionalCameraData().renderShadows = true;
         }
         else
         {
-            QualitySettings.shadows = ShadowQuality.Disable;
+            Camera.main.GetUniversalAdditionalCameraData().renderShadows = false;
         }
         
     }

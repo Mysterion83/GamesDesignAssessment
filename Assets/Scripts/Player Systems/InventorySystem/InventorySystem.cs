@@ -21,6 +21,7 @@ public class InventorySystem : MonoBehaviour
 
     private void Start()
     {
+        UI = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<UIManager>();
         Inventory = new InventorySlot[SlotsAmount];
         //for (int i = 0; i < 999; i++)
         //{

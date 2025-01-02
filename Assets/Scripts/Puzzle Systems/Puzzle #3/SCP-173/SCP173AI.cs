@@ -21,8 +21,8 @@ public class SCP173AI : MonoBehaviour
     void Start()
     {
         CameraObjectDetection = gameObject.GetComponentInChildren<CameraObjectDetection>();
-        Target = GameObject.FindGameObjectWithTag("Player").transform;
-        PlayerBlinking = GameObject.FindGameObjectWithTag("Player").GetComponent<BlinkingSystem>();
+        Target = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<MovementSystem>().transform;
+        PlayerBlinking = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<BlinkingSystem>();
         AI = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
         
@@ -35,7 +35,7 @@ public class SCP173AI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!CameraObjectDetection.SeenByCamera ^ PlayerBlinking.IsBlinking && PlayerBlinking.InBlinkingArea)
+        if (!CameraObjectDetection.SeenByCamera ^ PlayerBlinking.IsBlinking && PlayerBlinking.InBlinkingArea && !gm.GetPlayerDead())
         {
             if (!AudioPlaying)
             {
@@ -68,9 +68,7 @@ public class SCP173AI : MonoBehaviour
     {
         AI.isStopped = false;
         AI.SetDestination(Target.position); 
-        //transform.position = Vector3.MoveTowards(transform.position, new Vector3(Target.position.x, transform.position.y, Target.position.z), Speed);
         transform.LookAt(Target.position);
         transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
-        //rb.AddForce(transform.forward * Speed);
     }
 }

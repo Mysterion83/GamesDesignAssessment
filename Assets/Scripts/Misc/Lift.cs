@@ -9,14 +9,17 @@ public class Lift : Interactable
     float CurrentTimer = 5f;
     [SerializeField] bool Interacted = false;
     GameManager gm;
+    AudioController AC;
     private void Start()
     {
         CurrentTimer = LiftTimer;
         gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        AC = GetComponent<AudioController>();
     }
     public override void Interact()
     {
         Interacted = true;
+        AC.Play(0, 1, 1);
     }
     private void Update()
     {

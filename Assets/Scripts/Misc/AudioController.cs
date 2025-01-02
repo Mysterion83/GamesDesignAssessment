@@ -24,4 +24,8 @@ public class AudioController : MonoBehaviour
     {
         Audio.Stop();
     }
+    public int Length()
+    {
+        return Clips.Length;
+    }
 }
