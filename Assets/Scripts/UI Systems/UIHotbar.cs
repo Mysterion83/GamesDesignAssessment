@@ -11,17 +11,12 @@ public class UIHotbar : MonoBehaviour
     ItemNameFadeOut Tooltip;
     [SerializeField]
     Image[] HotbarImages;
-    // Start is called before the first frame update
+
     void Start()
     {
         Tooltip = gameObject.GetComponentInChildren<ItemNameFadeOut>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void HotbarUpdate(InventorySlot[] slots)
     {
         for (int i = 0; i < slots.Length; i++) 

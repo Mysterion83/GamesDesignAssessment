@@ -11,17 +11,11 @@ public class UIManager : MonoBehaviour
     GameObject PopupBox;
     [SerializeField]
     TextMeshProUGUI PopupBoxText;
-    // Start is called before the first frame update
+
     void Start()
     {
         PopupBox.SetActive(false);
         gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     public void InventoryUpdate(InventorySlot[] slots)
     {
@@ -39,7 +33,6 @@ public class UIManager : MonoBehaviour
     }
     public void ClosePopup()
     {
-        Debug.Log("Closing Pop-up");
         PopupBoxText.text = "";
         PopupBox.SetActive(false);
         gm.UnFreezePlayer();

@@ -6,7 +6,7 @@ public class Puzzle5Manager : MonoBehaviour
 {
     [SerializeField]
     string LockdownCode;
-    // Start is called before the first frame update
+
     void Start()
     {
         GenerateCode();

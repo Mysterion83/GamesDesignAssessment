@@ -2128,7 +2128,22 @@ MonoBehaviour:
     shield: Factory props - \nhttps://assetstore.unity.com/packages/3d/props/electrical-shield-118266\nSockets
     and Fuse Box Pack: TrueBlue Studios -\nhttps://assetstore.unity.com/packages/3d/props/sockets-and-fuse-box-pack-148620\nRust
     Key: Aleksn09 - https://assetstore.unity.com/packages/3d/props/rust-key-167590\nRubble
-    and Debris - Modular Set - Free Sample - \nhttps://assetstore.unity.com/packages/3d/props/exterior/rubble-and-debris-modular-set-free-sample-118763\n\nAudio:\n\n"
+    and Debris - Modular Set - Free Sample - \nhttps://assetstore.unity.com/packages/3d/props/exterior/rubble-and-debris-modular-set-free-sample-118763\n\nAudio:\nSCP
+    173 Movement:\r                                  https://freesound.org/people/Faceonmars/sounds/106259/\r\nDoor
+    / Safe Opening:\r \r                                   https://freesound.org/people/TampaJoey/sounds/588507/\r\nSafe
+    Correct Input Click:\r                                          https://freesound.org/people/bone666138/sounds/198854/\r\nAmbient
+    Music:\r                          https://freesound.org/people/X3nus/sounds/477479/\r\nServer
+    Click Sound:\r                                 https://freesound.org/people/stijn/sounds/43681/\r\nCircuit
+    Breaker Open:\r                                   https://freesound.org/people/ingudios/sounds/119466/\r\nVoltage
+    controller Dial Turn:\r                                              https://freesound.org/people/freemaster2/sounds/120844/\r\nLight
+    Humming: \n\r https://freesound.org/people/brytonentertainment/sounds/369177/\r\nGun
+    Cock:\r                  https://freesound.org/people/woodmoose/sounds/177054/\r\nGun
+    Fire:    \n\r https://freesound.org/people/CGEffex/sounds/158978/\r\nBird Noises:
+    \n\r https://freesound.org/people/arnaud%20coutancier/sounds/515323/\r\n\n\nScream
+    Sounds:\nhttps://freesound.org/people/marionagm90/sounds/220663/ https://freesound.org/people/RutgerMuller/sounds/104034/\nhttps://freesound.org/people/owly-bee/sounds/415352/
+    https://freesound.org/people/TheSubber13/sounds/239902/\nhttps://freesound.org/people/XfiXy8/sounds/467293/
+    https://freesound.org/people/xl57/sounds/671200/\nhttps://freesound.org/people/tomattka/sounds/400181/
+    https://freesound.org/people/Reitanna/sounds/344029/\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2155,8 +2170,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 11
+  m_fontSizeBase: 11
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6058,7 +6073,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -10}
-  m_SizeDelta: {x: 320, y: 60}
+  m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1210151745
 MonoBehaviour:
@@ -11317,7 +11332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1890334563
 RectTransform:
   m_ObjectHideFlags: 0
