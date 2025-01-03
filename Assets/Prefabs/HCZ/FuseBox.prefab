@@ -898,7 +898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41f8e3208e2a2d478a9939024c75341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AdditionalToolTip: 
+  AdditionalToolTip: Requires a Fuse
   ObjectsToInteractWith: []
   RequiredItemID: 5
   Fuse: {fileID: 1202101845377646847}

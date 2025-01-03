@@ -63,6 +63,7 @@ public class BlinkingSystem : MonoBehaviour
     void BlinkAreaLeave()
     {
         InBlinkingArea = false;
+        BlinkPanel.SetActive(false);
         DisableUIBar();
     }
     void EnableUIBar()

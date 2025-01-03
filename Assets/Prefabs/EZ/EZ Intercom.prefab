@@ -3792,7 +3792,7 @@ PrefabInstance:
     - target: {fileID: 2937707031884047043, guid: 379b76ea2f9ffad46bc1cbea200ff5b6, type: 3}
       propertyPath: Text
       value: "Facility Guard Adam\u2019s Personal Notes 15:15:\r\nWell, seems like
-        the servers are messing up again, <color=red><b>whenever im trying to toggle
+        the servers are messing up again, <color=red><b>whenever I'm trying to toggle
         on a server, it also toggles other servers and vice versa and I need them
         all on to open the door to the computer terminal</color></b>, I need to fix
         this fast, Facility Manager Dane is going to fire me for this as <color=red><b>his

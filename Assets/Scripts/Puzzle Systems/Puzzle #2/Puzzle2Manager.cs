@@ -35,10 +35,6 @@ public class Puzzle2Manager : MonoBehaviour
     {
         GenerateFuse();
     }
-    private void Update()
-    {
-
-    }
     public void TurnOnCircuitBreaker()
     {
         circuitBreakerOn = true;

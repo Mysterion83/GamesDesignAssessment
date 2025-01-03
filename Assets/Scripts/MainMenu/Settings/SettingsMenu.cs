@@ -24,28 +24,7 @@ public class SettingsMenu : MonoBehaviour
         currentTab = (SettingsTabs)InTab;
         switch (currentTab)
         {
-            case SettingsTabs.Gameplay:
-                GameplayTab.SetActive(true);
-                VideoTab.SetActive(false);
-                GraphicsTab.SetActive(false);
-                AudioTab.SetActive(false);
-                break;
-            case SettingsTabs.Video:
-                GameplayTab.SetActive(false);
-                VideoTab.SetActive(true);
-                GraphicsTab.SetActive(false);
-                AudioTab.SetActive(false);
-                break;
-            case SettingsTabs.Graphics:
-                GameplayTab.SetActive(false);
-                VideoTab.SetActive(false);
-                GraphicsTab.SetActive(true);
-                AudioTab.SetActive(false);
-                break;
             case SettingsTabs.Audio:
-                GameplayTab.SetActive(false);
-                VideoTab.SetActive(false);
-                GraphicsTab.SetActive(false);
                 AudioTab.SetActive(true);
                 break;
             default:

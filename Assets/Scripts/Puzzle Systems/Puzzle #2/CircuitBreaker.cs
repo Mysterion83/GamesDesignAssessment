@@ -8,11 +8,6 @@ public class CircuitBreaker : MonoBehaviour
     public Puzzle2Manager PuzzleManager;
     [SerializeField]
     public InteractableAnimationObject Lever;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void FixedUpdate()

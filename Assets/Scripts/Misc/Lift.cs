@@ -19,7 +19,7 @@ public class Lift : Interactable
     public override void Interact()
     {
         Interacted = true;
-        AC.Play(0, 1, 1);
+        AC.Play(0, 0.5f, 1);
     }
     private void Update()
     {

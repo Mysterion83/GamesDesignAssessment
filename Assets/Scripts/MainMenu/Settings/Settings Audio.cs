@@ -15,17 +15,6 @@ public class SettingsAudio : MonoBehaviour
     [SerializeField]
     Slider MusicMixer;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void SetMasterVolume(float vol)
     {
         audioMixer.SetFloat("Master", Mathf.Log10(vol) * 20);

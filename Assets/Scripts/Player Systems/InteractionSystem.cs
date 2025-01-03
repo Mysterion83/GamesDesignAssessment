@@ -11,11 +11,6 @@ public class InteractionSystem : MonoBehaviour
     float MaxInteractionDistance = 5f;
     [SerializeField]
     TextMeshProUGUI TooltipText;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
